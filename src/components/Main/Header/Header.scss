@@ -1,0 +1,40 @@
+@import '/src/style/Color.scss';
+
+header {
+    display: flex;
+    height: 76px;
+    background-color: $light-brown-1;
+    position: relative;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+
+    > #logo {
+        position: absolute;
+        left: 23px;
+        top: 4px;
+        width: min-content;
+        text-align: center;
+        color: $brown;
+        > h1 {
+            font-family: 'Blinker';
+            font-size: 40px;
+        }
+        > h6 {
+            margin-top: 2px;
+            font-size: 12.5px;
+            font-family: 'BM Dohyeon';
+        }
+    }
+    ul {
+        position: absolute;
+        left: 260px;
+        width: 560px;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    > #header-profile-image {
+        position: absolute;
+        right: 20px;
+        align-self: center;
+    }
+}
