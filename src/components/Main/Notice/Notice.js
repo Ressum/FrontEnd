@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import './Notice.scss';
-import noticeBell from 'images/Notice/bell.svg';
+import bell from 'images/bell.svg';
 import { Link } from 'react-router-dom';
 
 function Notice() {
@@ -30,7 +30,7 @@ function Notice() {
                 }
             </ul>
             <div id="notice-shop-button">
-                <img src={noticeBell} alt="notice" />
+                <img src={bell} alt="notice" />
                 <Link to="/goods">SHOP</Link>
             </div>
         </div>
