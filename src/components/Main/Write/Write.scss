@@ -163,27 +163,4 @@
             }
         }
     }
-
-    #write-shop-button {
-        position: absolute;
-        right: 10px;
-        display: flex;
-        align-items: center;
-        margin-top: 18px;
-
-        a {
-            display: inline-block;
-            text-align: center;
-            margin-left: 35px;
-            height: 30px;
-            width: 80px;
-            line-height: 30px;
-            background-color: $light-orage;
-            border-radius: 30px;
-            text-decoration: none;
-            font-family: 'BM Jua';
-            font-size: 18px;
-            color: $dark-brown-1;
-        }
-    }
 }
