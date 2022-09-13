@@ -1,0 +1,82 @@
+@import '/src/style/Color.scss';
+
+// ul {
+//     display: flex;
+//     height: 76px;
+//     background-color: $light-brown-1;
+//     position: relative;
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+
+//     >#logo {
+//         position: absolute;
+//         left: 23px;
+//         top: 4px;
+//         width: min-content;
+//         text-align: center;
+//         color: $brown;
+
+//         >h1 {
+//             font-family: 'Blinker';
+//             font-size: 40px;
+//         }
+
+//         >h6 {
+//             margin-top: 2px;
+//             font-size: 12.5px;
+//             font-family: 'BM Dohyeon';
+//         }
+//     }
+
+//     ul {
+//         position: absolute;
+//         left: 260px;
+//         width: 560px;
+//         align-self: center;
+//         display: flex;
+//         justify-content: space-between;
+
+//         li {
+//             display: flex;
+//             align-items: center;
+
+//             img {
+//                 margin-right: 12px;
+//             }
+//         }
+//     }
+
+//     >#header-profile-image {
+//         position: absolute;
+//         right: 20px;
+//         align-self: center;
+//     }
+// }
+
+#head-menu {
+    table-layout: fixed;
+    display: table;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background: #32373c;
+    border-bottom: 1px solid #e2e2e2;
+    left: 0;
+    /* Left edge at left for now */
+    right: 0;
+    /* Right edge at right for now, so full width */
+    width: 100%;
+    /* Give it the desired width */
+    margin: auto;
+    /* Center it */
+    /* Make it fit window if under 500px */
+    z-index: 10000;
+    /* Whatever needed to force to front (1 might do) */
+
+    >li {
+        color: #FFF;
+        padding: 10px;
+        vertical-align: middle;
+        display: table-cell;
+        text-align: center;
+    }
+}
