@@ -1,12 +1,12 @@
-import './bottomBar.scss';
+import './BottomBar.scss';
 import homeIcon from 'images/Header/home.svg';
 import partyPopperIcon from 'images/Header/party-popper.svg';
 import calenderIcon from 'images/Header/calender.svg';
 import bookIcon from 'images/Header/book.svg';
 
-function bottomBar() {
+function BottomBar() {
     return (
-        <ul id="head-menu" role="navigation" style="height: 50px;">
+        <ul id="head-menu" role="navigation" style={{height: '50px'}}>
             <li>
                 <img src={homeIcon} alt="home" />
                 홈
@@ -27,4 +27,4 @@ function bottomBar() {
     );
 }
 
-export default bottomBar;
+export default BottomBar;
