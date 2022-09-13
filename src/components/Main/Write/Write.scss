@@ -1,0 +1,165 @@
+@import '/src/style/Color.scss';
+
+#write {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        color: $dark-brown-2;
+        font-size: 25px;
+        font-family: 'BM Dohyeon';
+        margin-top: 58px;
+    }
+    #write-horizontal-line {
+        height: 0.5px;
+        width: 100%;
+        background-color: $dark-gray;
+        margin-top: 26px;
+    }
+    #write-contents {
+        display: grid;
+        width: 100%;
+        margin-top: 40px;
+        grid-template-columns: 428px 1108px;
+
+        #select-book {
+            margin-left: 64px;
+
+            h2 {
+                font-size: 23px;
+                font-family: 'BM Dohyeon';
+            }
+            #book-cover {
+                margin-top: 6px;
+                width: 280px;
+                // height: 400px;//
+                background-color: $light-blue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                font-family: 'Blinker';
+            }
+        }
+        #write-book {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            > div {
+                width: 800px;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid $light-gray-1;
+                box-sizing: border-box;
+                > h2 {
+                    height: 45px;
+                    background-color: $light-brown-1;
+                    line-height: 45px;
+                    text-align: center;
+                    font-size: 18px;
+                    font-family: 'Blinker';
+                    color: $dark-brown-1;
+                    font-weight: 600;
+                }
+                > h4 {
+                    margin-top: 6px;
+                    margin-left: 11px;
+                    color: $gray-1;
+                    font-size: 14px;
+                }
+                .write-book-line {
+                    height: 0.5px;
+                    width: 780px;
+                    margin: 0 auto;
+                    background-color: $light-gray-1;
+                    margin-top: 3px;
+                    margin-bottom: 10px;
+                }
+                input[type=text] {
+                    margin: 0 auto;
+                    width: 750px;
+                    height: 30px;
+                    outline: none;
+                    border: none;
+                    padding: 0;
+                    background-color: $light-blue;
+                    box-sizing: border-box;
+                    padding: 14px;
+                    border-radius: 30px;
+                    font-size: 12px;
+                    font-family: 'Blinker';
+                }
+                textarea {
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    width: 750px;
+                    height: 195px;
+                    outline: none;
+                    border: none;
+                    padding: 0;
+                    background-color: $light-blue;
+                    box-sizing: border-box;
+                    padding: 14px;
+                    border-radius: 5px;
+                    font-size: 12px;
+                    font-family: 'Blinker';
+                }
+                > div:last-child {
+                    border-top: 1px solid $light-gray-1;
+                    // /height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    > div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 800-45px;
+                        > div:first-child {
+                            display: flex;
+                            align-items: center;
+                            margin-left: 14px;
+                        }
+                        > div:last-child {
+                            display: flex;
+                            margin-right: 12px;
+                            label {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    button {
+                        width: 85px;
+                        background: $light-orage;
+                        height: 45px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    #write-shop-button {
+        position: absolute;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        margin-top: 18px;
+        
+        a {
+            display: inline-block;
+            text-align: center;
+            margin-left: 35px;
+            height: 30px;
+            width: 80px;
+            line-height: 30px;
+            background-color: $light-orage;
+            border-radius: 30px;
+            text-decoration: none;
+            font-family: 'BM Jua';
+            font-size: 18px;
+            color: $dark-brown-1;
+        }
+    }
+}
