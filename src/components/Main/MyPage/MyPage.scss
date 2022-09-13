@@ -1,6 +1,7 @@
 @import '/src/style/Color.scss';
 
 #my-page {
+    padding-bottom: 65px;
     #my-page-header {
         display: flex;
         align-items: center;
@@ -58,10 +59,18 @@
         flex-direction: column;
         align-items: center;
 
+        > h2 {
+            font-size: 22px;
+            font-family: 'BM Dohyeon';
+            color: $dark-brown-2;
+        }
+
         >ul {
-            margin-left: 20px;
+            padding-left: 45px;
+            padding-right: 45px;
             display: flex;
             width: 100%;
+            box-sizing: border-box;
             overflow-x: scroll;
             overflow-y: hidden;
             white-space: nowrap;
@@ -69,7 +78,12 @@
             &::-webkit-scrollbar{
                 display:none;
             }
-            >li {
+        }
+    }
+
+    #book-reports {
+        >ul {
+            > li:not(:last-child) {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -77,10 +91,53 @@
                 font-family: 'BM Jua';
 
                 > h4 {
+                    margin-top: 10px;
                     font-size: 18px;
                 }
                 > div {
                     font-size: 12px;
+                    color: $gray-1;
+                }
+            }
+        }
+    }
+    #read-books {
+        >ul {
+            > li:not(:last-child) {
+                margin-right: 20px;
+                font-family: 'BM Jua';
+
+                > div {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+
+                    > h4 {
+                        font-size: 18px;
+                        margin-right: 10px;
+                    }
+                    > div {
+                        font-size: 12px;
+                        color: $gray-1;
+                    }
+                }
+            }
+        }
+    }
+    #joined-events {
+        >ul {
+            > li:not(:last-child) {
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+                font-family: 'BM Dohyeon';
+
+                > h4 {
+                    margin-top: 10px;
+                    font-size: 25px;
+                }
+                > div {
+                    font-size: 18px;
                     color: $gray-1;
                 }
             }
