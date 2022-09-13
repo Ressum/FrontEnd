@@ -29,7 +29,7 @@ function Write() {
                         <div>
                             <div>
                                 <div>
-                                    <img src={photo} alt="photo" />사진
+                                    <img src={photo} alt="img-icon" />사진
                                 </div>
                                 <div>
                                     <input type="checkbox" id="public" />

@@ -10,20 +10,22 @@ import Main from "./components/Main/Main";
 import View from 'components/View/View';
 import AISurvey from 'components/AISurvey/AISurvey';
 import Goods from 'components/Goods/Goods';
-import bottomBar from 'components/Main/bottom_bar/bottomBar.js';
+import BottomBar from 'components/Main/BottomBar/BottomBar';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="View" element={<View />} />
-        <Route path="aisurvey" element={<AISurvey />} />
-        <Route path="goods" element={<Goods />} />
-        <Route path="main/*" element={<Main />} />
-        <Route path='/' element={<Navigate to="main"/>} />
-        <bottomBar />
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          <Route path="View" element={<View />} />
+          <Route path="aisurvey" element={<AISurvey />} />
+          <Route path="goods" element={<Goods />} />
+          <Route path="main/*" element={<Main />} />
+          <Route path='/' element={<Navigate to="main"/>} />
+        </Routes>
+      </Router>
+      <BottomBar />
+    </>
   );
 }
 
