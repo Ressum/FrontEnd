@@ -18,12 +18,14 @@ function Write() {
                 <div id="write-book">
                     <div>
                         <h2>독서록 쓰기</h2>
-                        <h4>제목</h4>
-                        <div className="write-book-line"></div>
-                        <input type="text" placeholder="글의 제목을 입력해주세요." />
-                        <h4>내용</h4>
-                        <div className="write-book-line"></div>
-                        <textarea placeholder="독서와 무관한 글 내용, 타인의 권리를 침해하거나 명예를 훼손하는 게시물은 별도의 통보 없이 제재를 받을 수 있습니다."></textarea>
+                        <div>
+                            <h4>제목</h4>
+                            <div className="write-book-line"></div>
+                            <input type="text" placeholder="글의 제목을 입력해주세요." />
+                            <h4>내용</h4>
+                            <div className="write-book-line"></div>
+                            <textarea placeholder="독서와 무관한 글 내용, 타인의 권리를 침해하거나 명예를 훼손하는 게시물은 별도의 통보 없이 제재를 받을 수 있습니다."></textarea>
+                        </div>
                         <div>
                             <div>
                                 <div>
