@@ -42,7 +42,7 @@ function MyPage() {
                 <div>로그아웃</div>
             </div>
             <div id="book-reports">
-                <div>내가 쓴 독서록</div>
+                <h2>내가 쓴 독서록</h2>
                 <div className="my-page-line"></div>
                 <ul>
                     {
@@ -57,22 +57,24 @@ function MyPage() {
                 </ul>
             </div>
             <div id="read-books">
-                <div>내가 읽은 책</div>
+                <h2>내가 읽은 책</h2>
                 <div className="my-page-line"></div>
                 <ul>
                     {
                         readBooksId.current.map((id, index) => (
                             <li key={index}>
                                 <img src={readBookImg} alt="readBookImg" />
-                                <h4>불편한 편의점</h4>
-                                <div>김호연 (지은이) 지음, 조선출판사 출판</div>
+                                <div>
+                                    <h4>불편한 편의점</h4>
+                                    <div>김호연 (지은이) 지음, 조선출판사 출판</div>
+                                </div>
                             </li>
                         ))
                     }
                 </ul>
             </div>
             <div id="joined-events">
-                <div>내가 참여한 이벤트</div>
+                <h2>내가 참여한 이벤트</h2>
                 <div className="my-page-line"></div>
                 <ul>
                     {
