@@ -31,6 +31,15 @@ header {
         align-self: center;
         display: flex;
         justify-content: space-between;
+
+        li {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 12px;
+            }
+        }
     }
     > #header-profile-image {
         position: absolute;
