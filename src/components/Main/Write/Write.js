@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import bell from 'images/bell.svg';
 import photo from 'images/Write/photo.svg';
 import './Write.scss';
 
@@ -43,10 +42,6 @@ function Write() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="write-shop-button">
-                <img src={bell} alt="notice" />
-                <Link to="/goods">SHOP</Link>
             </div>
         </div>
     );

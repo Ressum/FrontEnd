@@ -14,11 +14,13 @@ import Payment from './Payment/Payment';
 import SignIn from './SignIn/SignIn';
 import SignUp from './SignUp/SignUp';
 import Write from './Write/Write';
+import NoticeShopButton from './NoticeShopButton/NoticeShopButton';
 
 function Main() {
     return (
         <div>
             <Header />
+            <NoticeShopButton />
             <Routes>
                 <Route path="home" element={<Home />} />
                 <Route path="attendancecheck" element={<AttendanceCheck />} />
