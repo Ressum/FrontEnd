@@ -17,7 +17,7 @@ import Write from './Write/Write';
 
 function Main() {
     return (
-        <>
+        <div>
             <Header />
             <Routes>
                 <Route path="home" element={<Home />} />
@@ -31,7 +31,7 @@ function Main() {
                 <Route path="write" element={<Write />} />
                 <Route path="/" element={<Navigate to="home" />} />
             </Routes>
-        </>
+        </div>
     );
 }
 

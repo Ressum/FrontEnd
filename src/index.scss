@@ -41,6 +41,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+input {
+	border: none;
+	padding: 0;
+	outline: none;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Blinker&display=swap');
 @font-face {
