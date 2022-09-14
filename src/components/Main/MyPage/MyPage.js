@@ -2,9 +2,9 @@ import { useRef } from "react";
 
 import './MyPage.scss';
 import myProfileImg from 'images/my-profile-img.svg';
-import bookReportImg from 'images/Event/book-report-image.svg';
-import readBookImg from 'images/Event/read-book-image.svg';
-import joinedEventImg from 'images/Event/joined-event-image.svg';
+import bookReportImg from 'images/MyPage/book-report-image.svg';
+import readBookImg from 'images/MyPage/read-book-image.svg';
+import joinedEventImg from 'images/MyPage/joined-event-image.svg';
 
 function MyPage() {
     const bookReportsId = useRef([
