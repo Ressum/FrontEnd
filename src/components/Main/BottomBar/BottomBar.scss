@@ -1,7 +1,7 @@
 @import '/src/style/Color.scss';
 #head-menu {
     table-layout: fixed;
-    display: table;//미디어퀴리로 나중에 display:table
+    display: none;//미디어퀴리로 나중에 display:table
     position: fixed;
     bottom: 0;
     color: white;
