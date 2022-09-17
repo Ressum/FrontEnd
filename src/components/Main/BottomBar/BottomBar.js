@@ -1,8 +1,9 @@
 import './BottomBar.scss';
-import homeIcon from 'images/Header/home.svg';
-import partyPopperIcon from 'images/Header/party-popper.svg';
-import calenderIcon from 'images/Header/calender.svg';
-import bookIcon from 'images/Header/book.svg';
+import homeIcon from 'images/mobile/home.svg';
+import partyPopperIcon from 'images/mobile/party-popper.svg';
+import calenderIcon from 'images/mobile/calender.svg';
+import bookIcon from 'images/mobile/write.svg';
+import mypage from 'images/mobile/mypage.svg';
 
 function BottomBar() {
     return (
@@ -16,12 +17,16 @@ function BottomBar() {
                 이벤트
             </li>
             <li>
+                <img src={bookIcon} alt="write" />
+                글쓰기
+            </li>
+            <li>
                 <img src={calenderIcon} alt="notice" />
                 공지사항
             </li>
             <li>
-                <img src={bookIcon} alt="write" />
-                글쓰기
+                <img src={mypage} alt="mypage" />
+                마이페이지
             </li>
         </ul>
     );

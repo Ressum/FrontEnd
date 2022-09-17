@@ -1,11 +1,11 @@
 @import '/src/style/Color.scss';
 #head-menu {
     table-layout: fixed;
-    display: none;//미디어퀴리로 나중에 display:table
+    display: table;//미디어퀴리로 나중에 display:table
     position: fixed;
     bottom: 0;
     color: white;
-    background: #32373c;
+    background: #FFCF9E;
     border-bottom: 1px solid #e2e2e2;
     left: 0;
     /* Left edge at left for now */
@@ -20,7 +20,7 @@
     /* Whatever needed to force to front (1 might do) */
 
     >li {
-        color: #FFF;
+        color: #5F5F5F;
         padding: 10px;
         vertical-align: middle;
         display: table-cell;
