@@ -10,23 +10,23 @@ function BottomBar() {
         <ul id="head-menu" role="navigation" style={{height: '50px'}}>
             <li>
                 <img src={homeIcon} alt="home" />
-                홈
+                <p>홈</p>
             </li>
             <li>
                 <img src={partyPopperIcon} alt="event" />
-                이벤트
+                <p>이벤트</p>
             </li>
             <li>
                 <img src={bookIcon} alt="write" />
-                글쓰기
+                <p>글쓰기</p>
             </li>
             <li>
                 <img src={calenderIcon} alt="notice" />
-                공지사항
+                <p>공지사항</p>
             </li>
             <li>
                 <img src={mypage} alt="mypage" />
-                마이페이지
+                <p>마이페이지</p>
             </li>
         </ul>
     );

@@ -1,7 +1,8 @@
 @import '/src/style/Color.scss';
+
 #head-menu {
     table-layout: fixed;
-    display: none;//미디어퀴리로 나중에 display:table
+    display: none; //미디어퀴리로 나중에 display:table
     position: fixed;
     bottom: 0;
     color: white;
@@ -25,5 +26,14 @@
         vertical-align: middle;
         display: table-cell;
         text-align: center;
+        
+        >p {
+            color: #5F5F5F;
+            font-family: 'Blinker';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 15px;
+        }
     }
 }
