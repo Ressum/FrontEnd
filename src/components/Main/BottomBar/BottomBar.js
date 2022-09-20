@@ -7,7 +7,7 @@ import mypage from 'images/mobile/mypage.svg';
 
 function BottomBar() {
     return (
-        <ul id="head-menu" role="navigation" style={{height: '50px'}}>
+        <ul id="bottom-menu" role="navigation">
             <li>
                 <img src={homeIcon} alt="home" />
                 <p>홈</p>
