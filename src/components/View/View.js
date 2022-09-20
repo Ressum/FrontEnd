@@ -1,6 +1,10 @@
+import ViewFirstPage from "./ViewFirstPage/ViewFirstPage";
+
 function view() {
     return(
-        <div>view</div>
+        <div id="view">
+            <ViewFirstPage />
+        </div>
     );
 }
 
