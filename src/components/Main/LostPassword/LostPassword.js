@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
-import './SignIn.scss';
-import kakao from 'images/SignIn/kakao.svg';
+import './LostPassword.scss';
 
-function SignIn() {
+function LostPassword() {
     return(
         <div id="sign-in">
             <form>
@@ -13,7 +12,7 @@ function SignIn() {
                     </div>
                     <div>
                         <label htmlFor="password">비밀번호</label>
-                        <input type="password" id="password" placeholder="비밀번호를 입력해주세요." />
+                        <input id="password" placeholder="비밀번호를 입력해주세요." />
                     </div>
                 </div>
                 <Link to="none">비밀번호를 잊어버리셨나요?</Link>
@@ -30,16 +29,10 @@ function SignIn() {
                         <div id="continue-with">continue with</div>
                         <div className="horizontal-line"></div>
                     </div>
-                    <div id="with-options">
-                        <div id="with-kakao">
-                            <img src={kakao} alt="kakao" />
-                            <div>카카오로 로그인</div>
-                        </div>
-                    </div>
                 </div>
             </form>
         </div>
     );
 }
 
-export default SignIn;
+export default LostPassword;

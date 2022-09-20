@@ -29,11 +29,11 @@ function SignUp() {
                     </div>
                     <div id="password-container">
                         <label htmlFor="password">비밀번호</label>
-                        <input id="password" placeholder="비밀번호를 입력해주세요." pattern='^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^*()_-+=[]{}~?:;`|/]).{8,16}$' required />
+                        <input type="password" id="password" placeholder="비밀번호를 입력해주세요." pattern='^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^*()_-+=[]{}~?:;`|/]).{8,16}$' required />
                     </div>
                     <div id="re-password-container">
                         <label htmlFor="re-password">비밀번호 재입력</label>
-                        <input id="re-password" placeholder="비밀번호를 입력해주세요." pattern='^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^*()_-+=[]{}~?:;`|/]).{8,16}$' required />
+                        <input type="password" id="re-password" placeholder="비밀번호를 입력해주세요." pattern='^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^*()_-+=[]{}~?:;`|/]).{8,16}$' required />
                     </div>
                     <div id="address-container">
                         <label htmlFor="address">주소</label>
