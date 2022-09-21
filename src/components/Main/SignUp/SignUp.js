@@ -38,12 +38,12 @@ function SignUp() {
                     <div id="address-container">
                         <label htmlFor="address">주소</label>
                         <div>
-                            <input id="address" placeholder="주소를 입력해주세요" minLength={5} maxLength={30} required />
+                            <input id="address" placeholder="우편번호" minLength={5} maxLength={30} required />
                             <button type="button">
                                 <img src={search} alt="search" />
                             </button>
                         </div>
-                        <input id="detail-address" placeholder="자세하게 입력해주세요" minLength={3} maxLength={30} required />
+                        <input id="detail-address" placeholder="상세주소" minLength={3} maxLength={30} required />
                     </div>
                     <div id="birth-container">
                         <label>생년월일</label>
