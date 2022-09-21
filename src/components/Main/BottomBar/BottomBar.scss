@@ -1,0 +1,59 @@
+@import '/src/style/Color.scss';
+
+#bottom-menu {
+    table-layout: fixed;
+    display: none; //미디어퀴리로 나중에 display:table
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background: #FFCF9E;
+    border-bottom: 1px solid #e2e2e2;
+    left: 0;
+    /* Left edge at left for now */
+    right: 0;
+    /* Right edge at right for now, so full width */
+    width: 100%;
+    /* Give it the desired width */
+    margin: auto;
+    /* Center it */
+    /* Make it fit window if under 500px */
+    // z-index: 10000;
+    /* Whatever needed to force to front (1 might do) */
+
+    >li {
+        color: #5F5F5F;
+        padding: 6px 4px 4px 4px;
+        vertical-align: middle;
+        display: table-cell;
+        text-align: center;
+
+        >p {
+            color: #5F5F5F;
+            font-family: 'Blinker';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 15px;
+        }
+    }
+}
+
+/* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    #bottom-menu{
+        display: none;
+    }
+}
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width:767px) {
+    #bottom-menu{
+        display: table;
+    }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+    #bottom-menu{
+        display: table;
+    }
+}
