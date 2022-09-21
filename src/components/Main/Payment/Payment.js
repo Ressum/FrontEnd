@@ -46,7 +46,7 @@ function Payment() {
                         <div>
                             <div>
                                 <h3>일반 책 구매</h3>
-                                <div>30000₩</div>
+                                <div>20000₩</div>
                             </div>
                             <input type="radio" name="book-type" />
                         </div>
@@ -62,16 +62,6 @@ function Payment() {
                         </div>
                         <img src={bookImg} alt="book" />
                     </label>
-                    <div id="monthly-book-purchases">
-                        <div>
-                            <h3>월간 책 구매 건수</h3>
-                            <select>
-                                <option value="1" defaultValue>1권</option>
-                                <option value="2">2권</option>
-                                <option value="3">3권</option>
-                            </select>
-                        </div>
-                    </div>
                 </div>
                 <div id="payment-info">
                     <h2>결제 정보</h2>
