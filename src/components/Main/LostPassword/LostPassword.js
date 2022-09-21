@@ -6,12 +6,12 @@ function LostPassword() {
         <div id="sign-in">
             <form>
                 <div id="input-form">
-                    <div>
+                    <div className='email'>
                         <label htmlFor="email">가입할 때 쓴 이메일을 입력해주세요.</label>
                         <input id="email" placeholder="이메일" />
                     </div>
                 </div>
-                <div id="login">
+                <div id="logins">
                     <button>확인</button>
                 </div>
             </form>
