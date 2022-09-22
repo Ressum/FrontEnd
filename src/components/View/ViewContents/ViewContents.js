@@ -1,62 +1,73 @@
 import './ViewContents.scss';
+import book1 from 'images/View/book1.svg';
+import book2 from 'images/View/book2.svg';
+import book3 from 'images/View/book3.svg';
+import book4 from 'images/View/book4.svg';
+import introduce1 from 'images/View/introduce1.svg';
+import introduce2 from 'images/View/introduce2.svg';
+import introduceMain from 'images/View/introduce-main.svg';
+import bookReport from 'images/View/book-report.svg';
 
 function ViewContents() {
     return (
         <div id="view-contents">
-            <h1>
-                래썸만의 책 추천 서비스를<br />
-                이용해보세요!
-            </h1>
-            <h2>나에게 딱 맞춘 책을 추천 받을 수 있어요</h2>
-            <div>
+            <div id="view-beginning">
+                <h1>
+                    래썸만의 책 추천 서비스를<br />
+                    이용해보세요!
+                </h1>
+                <h2>나에게 딱 맞춘 책을 추천 받을 수 있어요</h2>
                 <div>
                     <div>
-                        <h2>
-                            좋아요,<br />
-                            얼마 안 남았어요!
-                        </h2>
-                        <h3>
-                            한 달에 평소 책을 얼마나 읽으시나요?
-                        </h3>
+                        <div id="view-beginning-title">
+                            <h2>
+                                좋아요,<br />
+                                얼마 안 남았어요!
+                            </h2>
+                            <h3>
+                                한 달에 평소 책을 얼마나<br />
+                                읽으시나요?
+                            </h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <img src={book1} alt='book1' />
+                                <div>설명</div>
+                            </li>
+                            <li>
+                                <img src={book2} alt='book2' />
+                                <div>설명</div>
+                            </li>
+                            <li>
+                                <img src={book3} alt='book3' />
+                                <div>설명</div>
+                            </li>
+                            <li>
+                                <img src={book4} alt='book4' />
+                                <div>설명</div>
+                            </li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li>
-                            <img />
-                            <div>설명</div>
-                        </li>
-                        <li>
-                            <img />
-                            <div>설명</div>
-                        </li>
-                        <li>
-                            <img />
-                            <div>설명</div>
-                        </li>
-                        <li>
-                            <img />
-                            <div>설명</div>
-                        </li>
-                    </ul>
+                    <button>다음</button>
                 </div>
-                <button>다음</button>
             </div>
-            <div>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <h2>
+            <div id="view-introduce">
+                <img src={introduce1} alt="introduce1" />
+                <img src={introduce2} alt="introduce2" />
+                <img src={introduceMain} alt="introduceMain" />
+                <div>
                     책과 책의 연결로 천천히,<br />
                     확실하게 폭넓은 분야를 익혀보아요
-                </h2>
-                <h3>
+                </div>
+                <div>
                     문해력, 어휘력 걱정이 되시나요?
-                </h3>
-                <h1>
+                </div>
+                <div>
                     래썸 공책의 단계학습으로<br />
                     보다 효과적인 독서를 해봐요!
-                </h1>
+                </div>
             </div>
-            <div>
+            <div id="view-book-report">
                 <h1>
                     랫썸에서 책을 읽고 독서록을 나눠보아요!
                 </h1>
@@ -64,7 +75,7 @@ function ViewContents() {
                     다른 친구들의 독서록을 보며 다양한 시각을 가질 수 있어요.
                 </h2>
                 <div>
-                    <img />
+                    <img src={bookReport} alt="bookReport" />
                     <div>
                         <h3>
                         ㅇㄴ마ㅓ푸아너퓨ㅜ아ㅓㅠ파유파마ㅏㅁ뉴차ㅓㄴㅁ차ㅓㄴ무차ㅓㄴ무ㅏ처눔천머춘문머춘ㅁ추ㄴㅁㅇㅇㄴㅁㅇㄴㅇㄴㅇㄴ
