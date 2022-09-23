@@ -38,7 +38,7 @@ function SignUp() {
                     <div id="address-container">
                         <label htmlFor="address">주소</label>
                         <div>
-                            <input id="address" placeholder="우편번호" minLength={5} maxLength={30} required />
+                            <input id="address" placeholder="우편번호" minLength={5} maxLength={30} readOnly />
                             <button type="button">
                                 <img src={search} alt="search" />
                             </button>
