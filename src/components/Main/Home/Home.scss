@@ -5,7 +5,7 @@
     margin: 0 auto;
     position: relative;
     top: 40px;
-
+    padding-left: 5%;
     #contents {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -39,7 +39,7 @@
 
                 >img {
                     border-radius: 5px;
-                    width: 100%;
+                    width: 92%;
                 }
 
                 >div {
@@ -84,6 +84,10 @@
             color: $gray-1;
         }
     }
+    #contents {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
@@ -96,6 +100,10 @@
             color: $gray-1;
         }
     }
+    #contents {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
@@ -107,5 +115,9 @@
             text-align: right;
             color: $gray-1;
         }
+    }
+    #contents {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

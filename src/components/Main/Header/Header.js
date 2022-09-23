@@ -2,7 +2,7 @@ import './Header.scss';
 import homeIcon from 'images/Header/home.svg';
 import partyPopperIcon from 'images/Header/party-popper.svg';
 import calenderIcon from 'images/Header/calender.svg';
-import bookIcon from 'images/Header/book.svg';
+import writeIcon from 'images/Header/write.svg';
 
 function Header() {
     return(
@@ -21,11 +21,11 @@ function Header() {
                     이벤트
                 </li>
                 <li>
-                    <img src={calenderIcon} alt="notice" />
+                    <img src={calenderIcon} alt="notice" className="notice"/>
                     공지사항
                 </li>
                 <li>
-                    <img src={bookIcon} alt="write" />
+                    <img src={writeIcon} alt="write" className="write" />
                     글쓰기
                 </li>
             </ul>
