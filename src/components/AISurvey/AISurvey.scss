@@ -1,0 +1,48 @@
+@import '/src/style/Color.scss';
+
+#ai-survey {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > form {
+        height: 100%;
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        > div {
+            display: grid;
+            grid-template-columns: 480px auto;
+
+            > div:first-child {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                > h1 {
+                    font-size: 48px;
+                    font-weight: 600;
+                    font-family: 'Blinker';
+                    margin-bottom: 50px;
+                }
+                > div {
+                    font-size: 32px;
+                    font-family: 'Blinker';
+                }
+            }
+        }
+        > button {
+            margin-top: 80px;
+            width: 400px;
+            height: 70px;
+            border: none;
+            border-radius: 10px;
+            background-color: $light-orage;
+            color: white;
+            font-family: 'Blinker';
+            font-weight: 700;
+            font-size: 20px;
+        }
+    }
+}
