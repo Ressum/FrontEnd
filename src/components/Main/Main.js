@@ -16,6 +16,8 @@ import SignUp from './SignUp/SignUp';
 import Write from './Write/Write';
 import NoticeShopButton from './NoticeShopButton/NoticeShopButton';
 import LostPassword from './LostPassword/LostPassword';
+import AISurveyResult from './AISurveyResult/AISurveyResult';
+
 
 function Main() {
     return (
@@ -33,6 +35,7 @@ function Main() {
                 <Route path="signup" element={<SignUp />} />
                 <Route path="write" element={<Write />} />
                 <Route path="lostpassword" element={<LostPassword />} />
+                <Route path="aisurveyresult" element={<AISurveyResult />} />
                 <Route path="/" element={<Navigate to="home" />} />
             </Routes>
         </div>
