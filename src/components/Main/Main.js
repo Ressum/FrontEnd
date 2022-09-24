@@ -17,11 +17,12 @@ import Write from './Write/Write';
 import NoticeShopButton from './NoticeShopButton/NoticeShopButton';
 import LostPassword from './LostPassword/LostPassword';
 import AISurveyResult from './AISurveyResult/AISurveyResult';
+import './Main.scss';
 
 
 function Main() {
     return (
-        <div>
+        <div id="main">
             <Header />
             <NoticeShopButton />
             <Routes>

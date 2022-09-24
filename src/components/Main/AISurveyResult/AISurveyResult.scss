@@ -1,0 +1,53 @@
+@import '/src/style/Color.scss';
+
+#ai-survey-result {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    > div {
+        width: 800px;
+        height: 600px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Blinker';
+        border-radius: 10px 10px 0 0;
+        
+        > h3 {
+            height: 78px;
+            line-height: 78px;
+            font-size: 22px;
+        }
+        > h4 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        > h5 {
+            color: $gray-1;
+            margin-top: 4px;
+        }
+        #ai-survey-buttons {
+            margin-top: 3px;
+            > button {
+                width: 160px;
+                height: 50px;
+                border: none;
+                border-radius: 10px;
+                background-color: $light-orage;
+                color: white;
+                font-weight: 700;
+                margin: 0 10px;
+            }
+        }
+        > div:last-child {
+            height: 78px;
+            line-height: 78px;
+            > a {
+                margin-left: 5px;
+                text-decoration: none;
+                color: $sky-blue;
+            }
+        }
+    }
+}
