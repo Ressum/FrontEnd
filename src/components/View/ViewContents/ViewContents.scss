@@ -1,6 +1,7 @@
 @import '/src/style/Color.scss';
 
 #view-contents {
+    overflow-x: hidden;
     position: relative;
     #view-beginning {
         padding: 110px 105px 0;

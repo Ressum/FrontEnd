@@ -23,7 +23,7 @@ function Home() {
                             <div className="content-header">
                                 <img src={profile} alt="profile" />
                                 <div>
-                                    <h5>사밀님이 읽었어요</h5>
+                                    <h3><span>사밀</span>님이 읽었어요</h3>
                                     <div><span>n</span>분 전</div>
                                 </div>
                             </div>
