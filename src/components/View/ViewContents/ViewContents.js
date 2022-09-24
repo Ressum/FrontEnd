@@ -7,6 +7,7 @@ import introduce1 from 'images/View/introduce1.svg';
 import introduce2 from 'images/View/introduce2.svg';
 import introduceMain from 'images/View/introduce-main.svg';
 import bookReport from 'images/View/book-report.svg';
+import eventBanner from 'images/View/event-banner.svg';
 
 function ViewContents() {
     return (
@@ -89,17 +90,17 @@ function ViewContents() {
                             <div id="view-vertical-line"></div>
                             <div>
                                 <h1>불편한 편의점</h1>
-                                <h2>김호연 (지은이) 지음
-조선출판사 출판</h2>
+                                <h2>김호연 (지은이) 지음<br />
+                                조선출판사 출판</h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
+            <div id="view-event">
                 <h1>보다 재밌는 독서를 해볼까요?</h1>
                 <h2>독서 마라톤, 이벤트 대화 등 다양한 컨텐츠를 마음껏 이용해보아요!</h2>
-                <img src="" alt="" />
+                <img src={eventBanner} alt="eventBanner" />
             </div>
         </div>
     );

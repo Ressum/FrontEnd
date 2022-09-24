@@ -1,0 +1,49 @@
+@import '/src/style/Color.scss';
+
+#view-goods {
+    margin-top: 195px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'BM Dohyeon';
+    > h1 {
+        font-size: 55px;
+        text-align: center;
+        color: $brown;
+    }
+    > div {
+        margin-top: 75px;
+        height: 880px;
+        width: 1300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        > div {
+            height: 120px;
+            width: 1082px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 26px;
+
+            > h3 {
+                font-size: 30px;
+            }
+            > h2 {
+                font-size: 50px;
+                text-align: right;
+            }
+        }
+
+        > ul {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: 300px 300px;
+            column-gap: 28px;
+            row-gap: 32px;
+        }
+    }
+}

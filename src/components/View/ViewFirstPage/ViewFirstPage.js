@@ -6,7 +6,7 @@ import main from 'images/View/main.svg';
 function ViewFirstPage() {
     return (
         <div id="view-first-page">
-            <Link to="/">LOGIN</Link>
+            <Link to="/main/signin">LOGIN</Link>
             <div>
                 <h1>Ressum!</h1>
                 <img src={main} alt="main" />
