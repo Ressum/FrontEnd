@@ -3,6 +3,7 @@ import ViewFirstPage from "./ViewFirstPage/ViewFirstPage";
 import ViewGoods from "./ViewGoods/ViewGoods";
 import ViewProcess from "./ViewProcess/ViewProcess";
 import ViewQuestion from "./ViewQuestion/ViewQuestion";
+import './View.scss';
 
 function view() {
     return(

@@ -1,0 +1,47 @@
+@import '/src/style/Color.scss';
+
+#view-question {
+    font-family: 'BM Dohyeon';
+    color: $brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > h1 {
+        font-size: 50px;
+    }
+    > ul {
+        width: 686px;
+        margin-top: 50px;
+        margin-bottom: 300px;
+        > li {
+            margin-bottom: 5px;
+            > input { display: none; }
+            > input[type=checkbox]:checked ~ div {
+                display: block;
+            }
+            > label {
+                background-color: $light-brown-2;
+                color: $brown;
+                height: 86px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 30px;
+                margin-bottom: 5px;
+                > h2 {
+                    font-family: 'BM Dohyeon';
+                    font-size: 25px;
+                }
+            }
+            > div {
+                background-color: $light-brown-2;
+                display: none;
+                color: $brown;
+                font-family: 'Blinker';
+                border-radius: 10px;
+                padding: 30px;
+            }
+        }
+    }
+}
