@@ -13,7 +13,7 @@ function Header() {
             </div>
             <ul>
                 <li>
-                    <img src={homeIcon} alt="home" />
+                    <img src={homeIcon} alt="home" className="notice"/>
                     홈
                 </li>
                 <li>

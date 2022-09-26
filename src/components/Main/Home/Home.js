@@ -11,7 +11,10 @@ function Home() {
         cover_21941,
         cover_21942,
         cover_21943,
-        cover_21944
+        cover_21944,
+        cover_21944,
+        cover_21943,
+        cover_21943
     ])
     
     return (
