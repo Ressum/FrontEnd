@@ -20,11 +20,11 @@
         > div {
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 10px;
-            height: 700px;
+            height: 620px;
             padding: 0 110px;
             box-sizing: border-box;
             position: relative;
-            margin-top: 80px;
+            margin-top: 60px;
 
             > div {
                 display: flex;
@@ -78,10 +78,10 @@
             }
             > button {
                 position: absolute;
-                bottom: 90px;
+                bottom: 5%;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 400px;
+                width: 25%;
                 height: 70px;
                 border: none;
                 border-radius: 10px;
