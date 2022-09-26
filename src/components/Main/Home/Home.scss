@@ -3,17 +3,17 @@
 #home {
     overflow-x: hidden;
     background-color: $light-brown-3;
-    width: 95%;
+    width: 90%;
     position: relative;
     top: 40px;
-    padding-left: 5%;
-    padding-right: -10%;
+    padding-left: 9.25%;
+    padding-right: 0%;
     #contents {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 50px;
         padding-bottom: 90px;
-        width: 100%;
+        width: 95%;
 
         .content {
             .content-header {
