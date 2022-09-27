@@ -3,19 +3,19 @@
 #home {
     overflow-x: hidden;
     background-color: $light-brown-3;
-    width: 90%;
+    width: 100%;
     position: relative;
     top: 40px;
-    padding-left: 9.25%;
-    padding-right: 0%;
     #contents {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 50px;
         padding-bottom: 90px;
-        width: 95%;
-
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
         .content {
+            padding: 0px 5% 0px 5%;
             .content-header {
                 // font-family: 'NanumSquare EB';
                 display: flex;
@@ -50,11 +50,11 @@
 
             .content-section {
                 margin-top: 10px;
-                width: 90%;
+                width: 100%;
 
                 >img {
                     border-radius: 5px;
-                    width: 90%;
+                    width: 100%;
                 }
 
                 >div {
