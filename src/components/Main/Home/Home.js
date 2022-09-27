@@ -49,7 +49,7 @@ function Home() {
                                             불편한 편의점
                                         </div>
                                         <div className="author">
-                                            <span>김호현</span> (지은이) 지음
+                                            <span>김호현</span> 지음
                                         </div>
                                         <div className="publish">
                                             <span>조선출판사</span> 출판
