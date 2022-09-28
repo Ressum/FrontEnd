@@ -4,7 +4,7 @@ import partyPopperIcon from 'images/mobile/party-popper.svg';
 import calenderIcon from 'images/mobile/calender.svg';
 import bookIcon from 'images/mobile/write.svg';
 import mypage from 'images/mobile/mypage.svg';
-
+import { Link } from 'react-router-dom';
 function BottomBar() {
     function home(){
         window.location.href='../main/Home';
