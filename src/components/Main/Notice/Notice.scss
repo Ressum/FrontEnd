@@ -1,76 +1,78 @@
 @import '/src/style/Color.scss';
-
-#notice {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1 {
-        color: $dark-brown-2;
-        font-size: 25px;
-        font-family: 'BM Dohyeon';
-        margin-top: 100px;
-    }
-    #notice-horizontal-line {
-        height: 0.5px;
-        width: 100%;
-        background-color: $dark-gray;
-        margin-top: 28px;
-        margin-bottom: 36px;
-    }
-
-    ul {
-        li {
-            margin-bottom: 3px;
-            width: 700px;
-            height: 80px;
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-            box-sizing: border-box;
-            padding: 18px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            > div:first-child {
+body{
+    background-color: $light-brown-3;
+    #notice {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            color: $dark-brown-2;
+            font-size: 25px;
+            font-family: 'BM Dohyeon';
+            margin-top: 100px;
+        }
+        #notice-horizontal-line {
+            height: 0.5px;
+            width: 100%;
+            background-color: $dark-gray;
+            margin-top: 28px;
+            margin-bottom: 36px;
+        }
+    
+        ul {
+            li {
+                margin-bottom: 3px;
+                width: 700px;
+                height: 80px;
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+                box-sizing: border-box;
+                padding: 18px;
                 display: flex;
-                align-items: flex-end;
-                h3 {
-                    font-size: 26px;
-                    color: $brown;
-                    font-family: 'BM Hanna Pro';
+                flex-direction: column;
+                justify-content: space-between;
+    
+                > div:first-child {
+                    display: flex;
+                    align-items: flex-end;
+                    h3 {
+                        font-size: 26px;
+                        color: $brown;
+                        font-family: 'BM Hanna Pro';
+                    }
+                    div {
+                        margin-left: 8px;
+                        font-size: 14px;
+                        color: $gray-1;
+                        font-family: 'BM Hanna Air';
+                    }
                 }
-                div {
-                    margin-left: 8px;
+                > div:last-child {
                     font-size: 14px;
-                    color: $gray-1;
                     font-family: 'BM Hanna Air';
                 }
             }
-            > div:last-child {
-                font-size: 14px;
-                font-family: 'BM Hanna Air';
-            }
+            margin-bottom: 3%;
         }
-    }
-    #notice-shop-button {
-        position: absolute;
-        right: 10px;
-        display: flex;
-        align-items: center;
-        margin-top: 18px;
-        
-        a {
-            display: inline-block;
-            text-align: center;
-            margin-left: 35px;
-            height: 30px;
-            width: 80px;
-            line-height: 30px;
-            background-color: $light-orage;
-            border-radius: 30px;
-            text-decoration: none;
-            font-family: 'BM Jua';
-            font-size: 18px;
-            color: $dark-brown-1;
+        #notice-shop-button {
+            position: absolute;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            margin-top: 18px;
+            a {
+                display: inline-block;
+                text-align: center;
+                margin-left: 35px;
+                height: 30px;
+                width: 80px;
+                line-height: 30px;
+                background-color: $light-orage;
+                border-radius: 30px;
+                text-decoration: none;
+                font-family: 'BM Jua';
+                font-size: 18px;
+                color: $dark-brown-1;
+            }
         }
     }
 }
