@@ -16,7 +16,7 @@ function SignIn() {
                         <input type="password" id="password" placeholder="비밀번호를 입력해주세요." />
                     </div>
                 </div>
-                <Link to="none">비밀번호를 잊어버리셨나요?</Link>
+                <Link to="/main/LostPassword">비밀번호를 잊어버리셨나요?</Link>
                 <div id="login">
                     <button>로그인</button>
                     <div>
