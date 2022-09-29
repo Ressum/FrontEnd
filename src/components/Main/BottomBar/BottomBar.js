@@ -24,7 +24,7 @@ function BottomBar() {
     return (
         <ul id="bottom-menu" role="navigation">
             <li onClick={home}>
-                <img src={homeIcon} alt="home" />
+                <img  className='home' src={homeIcon} alt="home" />
                 <p>홈</p>
             </li>
             <li onClick={party}>
