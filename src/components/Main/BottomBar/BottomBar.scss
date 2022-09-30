@@ -26,12 +26,14 @@
         vertical-align: middle;
         display: table-cell;
         text-align: center;
-
+        text-decoration: none;
+        p{
             font-family: 'Blinker';
             font-style: normal;
             font-weight: 400;
             font-size: 8px;
             line-height: 15px;
+        }
     }
 }
 
