@@ -10,23 +10,23 @@ function BottomBar() {
         <div id="bottom-menu" role="navigation">
             <Link to='/main/home'>
                 <img  className='home' src={homeIcon} alt="home" />
-                홈
+                <p>홈</p>
             </Link>
             <Link to='/main/event'>
                 <img src={partyPopperIcon} alt="event" />
-                이벤트
+                <p>이벤트</p>
             </Link>
             <Link to='/main/write'>
                 <img src={bookIcon} alt="write" />
-                글쓰기
+                <p>글쓰기</p>
             </Link>
             <Link to='/main/notice'>
                 <img src={calenderIcon} alt="notice" />
-                공지사항
+                <p>공지사항</p>
             </Link>
             <Link to='/main/mypage'>
                 <img src={mypage} alt="mypage" />
-                마이페이지
+                <p>마이페이지</p>
             </Link>
         </div>
     );
