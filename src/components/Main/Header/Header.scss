@@ -8,23 +8,31 @@ header {
     position: relative;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 
-    > #logo {
+    >#logo {
         position: absolute;
         left: 23px;
         top: 4px;
         width: min-content;
         text-align: center;
         color: $brown;
-        > h1 {
-            font-family: 'Blinker';
-            font-size: 40px;
-        }
-        > h6 {
-            margin-top: 2px;
-            font-size: 12.5px;
-            font-family: 'BM Dohyeon';
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: $brown;
+            >h1 {
+                font-family: 'Blinker';
+                font-size: 40px;
+            }
+    
+            >h6 {
+                margin-top: 2px;
+                font-size: 12.5px;
+                font-family: 'BM Dohyeon';
+            }
         }
     }
+
     ul {
         margin-left: 240px;
         width: 35.5%;
@@ -37,31 +45,46 @@ header {
             display: flex;
             align-items: center;
 
-            img {
-                margin-right: 12px;
-            }
+            >a {
+                display: block;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: #000;
 
-            .notice{
-                margin-top: 6.2px;
-            }
+                img {
+                    margin-right: 12px;
+                }
 
-            .write{
-                margin-top: 3px;
+                .notice {
+                    margin-top: 6.2px;
+                }
+
+                .write {
+                    margin-top: 3px;
+                }
             }
         }
     }
-    > #header-profile-image {
+
+    >#header-profile-image {
         position: absolute;
         right: 20px;
         align-self: center;
+        > a {
+            text-decoration: none;
+            color: #000;
+        }
     }
 }
+
 /* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
     header {
         display: flex;
     }
 }
+
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
 @media all and (min-width:480px) and (max-width:767px) {
     header {
