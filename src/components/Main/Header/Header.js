@@ -11,7 +11,7 @@ function Header() {
                 <h1>Rasham</h1>
                 <h6>맞춤형 독서 교육 플랫폼</h6>
             </Link>
-            <ul>
+            <div>
                 <Link to='/main/Home'>
                         <img src={homeIcon} alt="home" className="notice"/>
                         홈
@@ -28,7 +28,7 @@ function Header() {
                     <img src={writeIcon} alt="write" className="write" />
                     글쓰기
                 </Link>
-            </ul>
+            </div>
             <Link id="header-profile-image" to='/main/mypage'>
                     <img src="" alt="profile" />
             </Link>
