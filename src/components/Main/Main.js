@@ -18,7 +18,7 @@ import NoticeShopButton from './NoticeShopButton/NoticeShopButton';
 import LostPassword from './LostPassword/LostPassword';
 import AISurveyResult from './AISurveyResult/AISurveyResult';
 import './Main.scss';
-
+import BottomBar from 'components/Main/BottomBar/BottomBar';
 
 function Main() {
     return (
@@ -39,6 +39,7 @@ function Main() {
                 <Route path="aisurveyresult" element={<AISurveyResult />} />
                 <Route path="/" element={<Navigate to="home" />} />
             </Routes>
+            <BottomBar></BottomBar>
         </div>
     );
 }
