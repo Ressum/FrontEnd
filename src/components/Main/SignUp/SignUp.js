@@ -1,7 +1,7 @@
 import './SignUp.scss';
 import male from 'images/SignUp/male.svg';
 import female from 'images/SignUp/female.svg';
-import search from 'images/SignUp/search.svg';
+import search from 'images/search.svg';
 
 function SignUp() {
     return(
