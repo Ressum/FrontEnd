@@ -37,10 +37,10 @@ function MyPage() {
                     <div>오늘은 날씨가 좋네요!</div>
                 </div>
             </div>
-            <div id="fix-logout-button">
+            {/* <div id="fix-logout-button">
                 <div>내 정보 수정</div>
                 <div>로그아웃</div>
-            </div>
+            </div> */}
             <div id="book-reports">
                 <h2>내가 쓴 독서록</h2>
                 <div className="my-page-line"></div>
