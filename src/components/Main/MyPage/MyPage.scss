@@ -10,6 +10,9 @@
 
         >img {
             width: 80px;
+            @media ALL and (max-width:800px) {
+                width: 50px;
+            }
         }
 
         >div {
@@ -19,10 +22,16 @@
                 font-family: 'BM Jua';
                 font-size: 35px;
                 color: $dark-brown-2;
+                @media ALL and (max-width:800px) {
+                    font-size: 22px;
+                }
             }
 
             >div {
                 font-family: 'BM Jua';
+                @media ALL and (max-width:800px) {
+                    font-size: 22px;
+                }
             }
         }
     }
@@ -83,7 +92,7 @@
 
     #book-reports {
         >ul {
-            > li:not(:last-child) {
+            > li {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -103,7 +112,7 @@
     }
     #read-books {
         >ul {
-            > li:not(:last-child) {
+            > li{
                 margin-right: 20px;
                 font-family: 'BM Jua';
 
@@ -126,7 +135,7 @@
     }
     #joined-events {
         >ul {
-            > li:not(:last-child) {
+            > li {
                 display: flex;
                 flex-direction: column;
                 margin-right: 20px;
