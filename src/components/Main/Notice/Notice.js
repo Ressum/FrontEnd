@@ -29,10 +29,6 @@ function Notice() {
                     ))
                 }
             </ul>
-            <div id="notice-shop-button">
-                <img src={bell} alt="notice" />
-                <Link to="/goods">SHOP</Link>
-            </div>
         </div>
     );
 }
