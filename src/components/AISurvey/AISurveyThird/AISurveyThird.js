@@ -5,16 +5,14 @@ function AISurveyThird() {
         <form>
             <div>
                 <div>
-                    <h1>그것 참<br />멋진데요?</h1>
+                    <h1>분량이 어떤 책을<br />선호하시나요?</h1>
                     <div>
-                        이때까지 읽었던 책중,<br />
-                        가장 재미있었던 책의 제목은 뭔가요?
+                        (정확한 페이지 수 기입)<br />
+                        (정확한 페이지 수 기입) 중에<br />
+                        골라주세요
                     </div>
                 </div>
-                <div id="ai-book-title">
-                    <input placeholder='띄어쓰기를 포함한 정확한 책 제목을 말씀해주세요!' />
-                    <div id="ai-division-line"></div>
-                    <div>딱히 생각나는 책이 없다면, 이 항목을 넘어가주세요!</div>
+                <div id="ai-survey-third">
                 </div>
             </div>
             <button>다음</button>
