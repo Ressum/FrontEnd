@@ -111,16 +111,18 @@
                         width: 100%;
                         background-color: $light-blue;
                     }
-                    > button {
-                        border: none;
-                        outline: none;
-                        height: 30px;
-                        width: 30px;
-                        background-color: $dark-brown-1;
-                        border-radius: 5px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                    >a {
+                        > button {
+                            border: none;
+                            outline: none;
+                            height: 30px;
+                            width: 30px;
+                            background-color: $dark-brown-1;
+                            border-radius: 5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
                     }
                 }
                 #detail-address {

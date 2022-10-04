@@ -38,10 +38,12 @@ function SignUp() {
                     <div id="address-container">
                         <label htmlFor="address">주소</label>
                         <div>
-                            <input id="address" placeholder="우편번호" minLength={5} maxLength={30} readOnly />
-                            <button type="button">
-                                <img src={search} alt="search" />
-                            </button>
+                            <input id="address" placeholder="우편번호" minLength={5} maxLength={30} required />
+                            <a target="_blank" href="https://www.juso.go.kr/statis/infoMyArea.do">
+                                <button type="button">
+                                    <img src={search} alt="search" />
+                                </button>
+                            </a>
                         </div>
                         <input id="detail-address" placeholder="상세주소" minLength={3} maxLength={30} required />
                     </div>
