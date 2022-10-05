@@ -64,10 +64,8 @@ function MyPage() {
                         readBooksId.current.map((id, index) => (
                             <li key={index}>
                                 <img src={readBookImg} alt="readBookImg" />
-                                <div>
-                                    <h4>불편한 편의점</h4>
-                                    <div>김호연 (지은이) 지음, 조선출판사 출판</div>
-                                </div>
+                                <h4>불편한 편의점</h4>
+                                <div>김호연 (지은이) 지음, 조선출판사 출판</div>
                             </li>
                         ))
                     }
