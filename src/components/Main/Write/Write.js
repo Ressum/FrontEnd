@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import photo from 'images/Write/photo.svg';
+import search from 'images/search.svg';
 import './Write.scss';
 
 function Write() {
@@ -12,6 +13,9 @@ function Write() {
                     <h2>책 선택하기</h2>
                     <div id="book-cover">
                         오른쪽 위의 검색 아이콘으로 책을 선택해주세요!
+                        <button type="button">
+                            <img src={search} alt="search" />
+                        </button>
                     </div>
                 </div>
                 <div id="write-book">
@@ -38,7 +42,7 @@ function Write() {
                                     </label>
                                 </div>
                             </div>
-                        <button>게시</button>
+                            <button>게시</button>
                         </div>
                     </div>
                 </div>
