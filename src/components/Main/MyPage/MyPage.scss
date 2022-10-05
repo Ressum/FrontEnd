@@ -72,9 +72,16 @@
             font-size: 22px;
             font-family: 'BM Dohyeon';
             color: $dark-brown-2;
+            @media ALL and (max-width:600px) {
+                font-size: 20px;
+            }
         }
 
         >ul {
+            @media ALL and (max-width:600px) {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
             padding-left: 45px;
             padding-right: 45px;
             display: flex;
@@ -100,12 +107,28 @@
                 font-family: 'BM Jua';
 
                 > h4 {
-                    margin-top: 10px;
-                    font-size: 18px;
+                    margin-top: 8px;
+                    font-size: 25px;
                 }
                 > div {
-                    font-size: 12px;
+                    font-size: 16px;
                     color: $gray-1;
+                }
+                @media ALL and (max-width:600px) {
+                    > h4 {
+                        margin-top: 10px;
+                        font-size: 18px;
+                    }
+                    > div {
+                        font-size: 12px;
+                        color: $gray-1;
+                    }
+                }
+                >img{
+                    @media ALL and (max-width:600px) {
+                        width: 300px;
+                        height: auto;
+                    }
                 }
             }
         }
@@ -115,15 +138,24 @@
             > li{
                 margin-right: 20px;
                 font-family: 'BM Jua';
-
+                >img{
+                    @media ALL and (max-width:600px) {
+                        width: 200px;
+                        height: auto;
+                    }
+                }
+                > h4 {
+                    margin-top: 8px;
+                    font-size: 25px;
+                }
                 > div {
-                    display: flex;
-                    align-items: center;
-                    margin-top: 10px;
-
+                    font-size: 16px;
+                    color: $gray-1;
+                }
+                @media ALL and (max-width:600px) {
                     > h4 {
+                        margin-top: 10px;
                         font-size: 18px;
-                        margin-right: 10px;
                     }
                     > div {
                         font-size: 12px;
@@ -141,13 +173,29 @@
                 margin-right: 20px;
                 font-family: 'BM Dohyeon';
 
+                >img{
+                    @media ALL and (max-width:600px) {
+                        width: 300px;
+                        height: auto;
+                    }
+                }
                 > h4 {
-                    margin-top: 10px;
+                    margin-top: 8px;
                     font-size: 25px;
                 }
                 > div {
-                    font-size: 18px;
+                    font-size: 16px;
                     color: $gray-1;
+                }
+                @media ALL and (max-width:600px) {
+                    > h4 {
+                        margin-top: 10px;
+                        font-size: 18px;
+                    }
+                    > div {
+                        font-size: 12px;
+                        color: $gray-1;
+                    }
                 }
             }
         }
