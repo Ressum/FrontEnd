@@ -24,7 +24,7 @@
         width: 100%;
         margin-top: 40px;
         justify-content: space-evenly;
-        align-items: flex-end;
+        align-items: center;
 
         #select-book {
             margin-left: 64px;
@@ -68,9 +68,13 @@
             align-items: center;
             justify-content: center;
 
-            >div {
+            #file-image {
+                > img {
+                    height: 403px;
+                }
+            }
+            #write-book-wrap {
                 width: 800px;
-                height: 400px;
                 display: flex;
                 flex-direction: column;
                 border: 1px solid $light-gray-1;
@@ -87,7 +91,7 @@
                     font-weight: 600;
                 }
 
-                >div:nth-child(2) {
+                #write-book-form {
                     display: flex;
                     flex-direction: column;
                     height: 310px;
@@ -140,9 +144,8 @@
                     }
                 }
 
-                >div:last-child {
+                #write-book-option {
                     border-top: 1px solid $light-gray-1;
-                    height: 45px;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
@@ -155,9 +158,14 @@
                         width: 755px;
 
                         >div:first-child {
-                            display: flex;
-                            align-items: center;
+                            
                             margin-left: 14px;
+
+                            > label {
+                                display: flex;
+                                align-items: center;
+                            }
+                            > input { display: none; }
                         }
 
                         >div:last-child {
