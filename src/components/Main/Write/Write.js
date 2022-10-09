@@ -2,12 +2,14 @@ import photo from 'images/Write/photo.svg';
 import search from 'images/search.svg';
 import './Write.scss';
 import { useState } from 'react';
+import WritePopUp from './WritePopUp/WritePopUp';
 
 function Write() {
     const [fileImage, setFileImage] = useState('');
     const saveFileImage = (event) => {
         setFileImage(URL.createObjectURL(event.target.files[0]));
     }
+    const [showPopUp, setShowPopUp] = useState(false);
 
     return (
         <div id="write">
@@ -18,7 +20,7 @@ function Write() {
                     <h2>책 선택하기</h2>
                     <div id="book-cover">
                         오른쪽 위의 검색 아이콘으로 책을 선택해주세요!
-                        <button type="button">
+                        <button type="button" onClick={() => setShowPopUp(true)}>
                             <img src={search} alt="search" />
                         </button>
                     </div>
@@ -60,6 +62,9 @@ function Write() {
                     </div>
                 </div>
             </div>
+            {
+                showPopUp ? <WritePopUp setShowPopUp={setShowPopUp} /> : null
+            }
         </div>
     );
 }
