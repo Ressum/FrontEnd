@@ -130,10 +130,14 @@
                 }
             }
             #birth-container {
+                align-items: center;
+                width: 100%;
+                >label{
+                    float: left;
+                }
                 > div {
                     display: flex;
                     column-gap: 8px;
-
                     > div {
                         display: flex;
                         height: 50px;
@@ -150,18 +154,27 @@
                     }
                     #birth-year {
                         width: 198px;
+                        @media ALL and (max-width:550px) {
+                            width: 168px;
+                        }
                         > input {
                             width: 100%;
                         }
                     }
                     #birth-month {
                         width: 93px;
+                        @media ALL and (max-width:550px) {
+                            width: 68px;
+                        }
                         > input {
                             width: 100%;
                         }
                     }
                     #birth-day {
                         width: 93px;
+                        @media ALL and (max-width:550px) {
+                            width: 68px;
+                        }
                         > input {
                             width: 100%;
                         }
@@ -185,6 +198,9 @@
                 font-family: 'Blinker';
                 font-weight: 700;
                 font-size: 20px;
+                @media ALL and (max-width:550px) {
+                    width: 320px;
+                }
             }
         }
     }
