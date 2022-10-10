@@ -1,17 +1,27 @@
 @import '/src/style/Color.scss';
 
 #sign-up {
+    height: 90%;
+    @media (min-height:655px) and (max-height:700px) {
+        height: 105%;
+    }
+    @media ALL and (max-height:654px) {
+        height: 110%;
+    }
+    
     form {
         position: relative;
-        width: 80%;
-        max-width: 400px;
+        width: 100%;
         margin: 0 auto;
+        max-width: 400px;
         margin-top: 22px;
-
+        align-items: center;
         #input-form {
-            display: grid;
+            display: flex;
+            flex-direction: column;
             row-gap: 22px;
-
+            width: 90%;
+            margin: 0 5%;
             > div {
                 display: flex;
                 flex-direction: column;
@@ -32,9 +42,20 @@
             }
             #email-gender-container {
                 display: grid;
-                grid-template-columns: 290px 48*2+6px;
+                grid-template-columns: 69.6% 48*2+6px;
                 column-gap: 6px;
-                
+                @media ALL and (max-width:400px) {
+                    grid-template-columns: 69% 48*2+6px;
+                }
+                @media ALL and (max-width:370px) {
+                    grid-template-columns: 66% 48*2+6px;
+                }
+                @media ALL and (max-width:345px) {
+                    grid-template-columns: 63% 48*2+6px;
+                }
+                @media ALL and (max-width:291px) {
+                    grid-template-columns: 57% 48*2+6px;
+                }
                 > #email-container {
                     display: flex;
                     flex-direction: column;
@@ -44,7 +65,7 @@
                         margin-bottom: 8px;
                     }
                     > input {
-                        width: 290px;
+                        width: 100%;
                         display: flex;
                         align-items: center;
                         height: 50px;
@@ -64,10 +85,8 @@
                     }
 
                     > #gender-input {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
+                        display: flex;
                         column-gap: 6px;
-
                         > label {
                             display: flex;
                             align-items: center;
@@ -129,13 +148,14 @@
                     margin-top: 12px;
                 }
             }
+
             #birth-container {
-                align-items: center;
                 width: 100%;
                 >label{
                     float: left;
                 }
                 > div {
+                    width: 100%;
                     display: flex;
                     column-gap: 8px;
                     > div {
@@ -153,28 +173,19 @@
                         }
                     }
                     #birth-year {
-                        width: 198px;
-                        @media ALL and (max-width:550px) {
-                            width: 168px;
-                        }
+                        width: 100%;
                         > input {
                             width: 100%;
                         }
                     }
                     #birth-month {
-                        width: 93px;
-                        @media ALL and (max-width:550px) {
-                            width: 68px;
-                        }
+                        width: 50%;
                         > input {
                             width: 100%;
                         }
                     }
                     #birth-day {
-                        width: 93px;
-                        @media ALL and (max-width:550px) {
-                            width: 68px;
-                        }
+                        width: 50%;
                         > input {
                             width: 100%;
                         }
@@ -183,14 +194,16 @@
             }
         }
         #sign-up-button {
-            margin-top: 35px;
+            margin-top: 30px;
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            width: 100%;
             > button {
-                width: 400px;
-                height: 70px;
+                width: 90%;
+                margin-left: 10%;
+                margin-right: 10%;
+                height: 65px;
                 border: none;
                 border-radius: 10px;
                 background-color: $light-orage;
@@ -198,9 +211,6 @@
                 font-family: 'Blinker';
                 font-weight: 700;
                 font-size: 20px;
-                @media ALL and (max-width:550px) {
-                    width: 320px;
-                }
             }
         }
     }
