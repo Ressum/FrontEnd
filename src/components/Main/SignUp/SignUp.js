@@ -11,7 +11,7 @@ function SignUp() {
                     <div id="email-gender-container">
                         <div id="email-container">
                             <label htmlFor="email">이메일</label>
-                            <input id="email" placeholder="이메일을 입력해주세요." pattern='^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$' />
+                            <input id="email" placeholder="이메일" pattern='^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$' />
                         </div>
                         <div id="gender-container">
                             <div>성별</div>
@@ -29,11 +29,11 @@ function SignUp() {
                     </div>
                     <div id="password-container">
                         <label htmlFor="password">비밀번호</label>
-                        <input type="password" id="password" placeholder="비밀번호를 입력해주세요." pattern='^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^*()_-+=[]{}~?:;`|/]).{8,16}$' required />
+                        <input type="password" id="password" placeholder="비밀번호" pattern='^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^*()_-+=[]{}~?:;`|/]).{8,16}$' required />
                     </div>
                     <div id="re-password-container">
                         <label htmlFor="re-password">비밀번호 재입력</label>
-                        <input type="password" id="re-password" placeholder="비밀번호를 입력해주세요." pattern='^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^*()_-+=[]{}~?:;`|/]).{8,16}$' required />
+                        <input type="password" id="re-password" placeholder="비밀번호" pattern='^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^*()_-+=[]{}~?:;`|/]).{8,16}$' required />
                     </div>
                     <div id="address-container">
                         <label htmlFor="address">주소</label>
