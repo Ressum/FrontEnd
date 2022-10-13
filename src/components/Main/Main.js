@@ -3,6 +3,7 @@ import {
     Route,
     Navigate
 } from 'react-router-dom';
+import { useState } from 'react';
 
 import Header from './Header/Header';
 import AttendanceCheck from './AttendanceCheck/AttendanceCheck';
@@ -19,12 +20,17 @@ import LostPassword from './LostPassword/LostPassword';
 import AISurveyResult from './AISurveyResult/AISurveyResult';
 import './Main.scss';
 import BottomBar from 'components/Main/BottomBar/BottomBar';
+import MainPopUp from './MainPopUp/MainPopUp';
 
 function Main() {
+    const [showPopUp, setShowPopUp] = useState(true);
     return (
         <div id="main">
             <Header />
             <NoticeShopButton />
+            {
+                showPopUp ? <MainPopUp setShowPopUp={setShowPopUp} /> : null
+            }
             <Routes>
                 <Route path="home" element={<Home />} />
                 <Route path="attendancecheck" element={<AttendanceCheck />} />
