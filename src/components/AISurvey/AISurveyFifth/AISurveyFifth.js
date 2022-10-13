@@ -3,6 +3,7 @@ import book1 from 'images/AISurvey/book1.svg';
 import book2 from 'images/AISurvey/book2.svg';
 import book3 from 'images/AISurvey/book3.svg';
 import book4 from 'images/AISurvey/book4.svg';
+import { Link } from 'react-router-dom';
 
 function AISurveyFifth() {
     return (
@@ -34,7 +35,11 @@ function AISurveyFifth() {
                     </div>
                 </div>
             </div>
-            <button>다음</button>
+            <Link to="/aisurvey/aisurvey6">
+                <button>
+                    다음
+                </button>
+            </Link>
         </form>
     );
 }

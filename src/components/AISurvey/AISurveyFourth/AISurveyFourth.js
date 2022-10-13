@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './AISurveyFourth.scss';
 
 function AISurveyFourth() {
@@ -15,7 +16,11 @@ function AISurveyFourth() {
                 <div id="ai-survey-fourth">
                 </div>
             </div>
-            <button>다음</button>
+            <Link to="/aisurvey/aisurvey5">
+                <button>
+                    다음
+                </button>
+            </Link>
         </form>
     );
 }

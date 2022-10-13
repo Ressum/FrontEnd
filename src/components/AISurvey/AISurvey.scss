@@ -32,17 +32,19 @@
                 }
             }
         }
-        > button {
-            margin-top: 80px;
-            width: 400px;
-            height: 70px;
-            border: none;
-            border-radius: 10px;
-            background-color: $light-orage;
-            color: white;
-            font-family: 'Blinker';
-            font-weight: 700;
-            font-size: 20px;
+        > a {
+            > button {
+                margin-top: 80px;
+                width: 400px;
+                height: 70px;
+                border: none;
+                border-radius: 10px;
+                background-color: $light-orage;
+                color: white;
+                font-family: 'Blinker';
+                font-weight: 700;
+                font-size: 20px;
+            }
         }
     }
 }
