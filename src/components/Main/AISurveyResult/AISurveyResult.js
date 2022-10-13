@@ -16,7 +16,7 @@ function AISurveyResult() {
                 </div>
                 <div>
                     더 정확한 추천을 원한다면? 
-                    <Link>지금바로 래썸으로!</Link>
+                    <Link to="/view">지금바로 래썸으로!</Link>
                 </div>
             </div>
         </div>
