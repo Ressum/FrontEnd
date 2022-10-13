@@ -4,16 +4,18 @@ header {
     display: flex;
     height: 76px;
     background-color: $light-brown-1;
+    width: 100%;
     position: relative;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 
-    > #logo {
+    >#logo {
         position: absolute;
         left: 23px;
         top: 4px;
         width: min-content;
         text-align: center;
         color: $brown;
+        text-decoration: none;
         > h1 {
             font-family: 'Blinker';
             font-size: 40px;
@@ -24,17 +26,49 @@ header {
             font-family: 'BM Dohyeon';
         }
     }
-    ul {
-        position: absolute;
-        left: 260px;
-        width: 560px;
+
+    div {
+        margin-left: 240px;
+        width: 50%;
+        max-width: 550px;
+        min-width: 410px;
         align-self: center;
         display: flex;
         justify-content: space-between;
+
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $brown;
+            img {
+                margin-right: 12px;
+            }
+
+            img {
+                margin-right: 12px;
+            }
+
+            .notice {
+                margin-top: 6.2px;
+            }
+
+            .write {
+                margin-top: 3px;
+            }
+        }
     }
-    > #header-profile-image {
+    >#header-profile-image {
         position: absolute;
         right: 20px;
         align-self: center;
+        text-decoration: none;
+    }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+@media all and (max-width:800px) {
+    header {
+        display: none;
     }
 }

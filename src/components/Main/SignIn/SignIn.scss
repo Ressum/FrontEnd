@@ -1,0 +1,119 @@
+@import '/src/style/Color.scss';
+
+#sign-in {
+    form {
+        position: relative;
+        width: 80%;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 72px;
+
+        #input-form {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 30px;
+            > div {
+                display: flex;
+                flex-direction: column;
+
+                > label {
+                    font-size: 18px;
+                    margin-bottom: 14px;
+                }
+                > input {
+                    display: flex;
+                    align-items: center;
+                    height: 50px;
+                    box-sizing: border-box;
+                    padding: 0 20px;
+                    background-color: $light-blue;
+                    border-radius: 5px;
+                }
+            }
+        }
+        > a {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            font-size: 14px;
+            right: 50%;
+            margin-top: 12px;
+            text-decoration: none;
+            color: $gray-2;
+            transform: translateX(50%);
+        }
+        #login {
+            margin-top: 75px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            > button {
+                width: 100%;
+                height: 70px;
+                border: none;
+                border-radius: 10px;
+                background-color: $light-orage;
+                color: white;
+                font-family: 'Blinker';
+                font-weight: 700;
+                font-size: 20px;
+            }
+            > div {
+                display: flex;
+                font-size: 12px;
+                margin-top: 8px;
+                > div {
+                    color: $gray-2;
+                }
+                > a {
+                    margin-left: 10px;
+                    color: $orange;
+                    text-decoration: none;
+                }
+            }
+        }
+        > div:last-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+
+            > div:first-child {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 400px;
+                .horizontal-line {
+                    width: 148px;
+                    height: 0.5px;
+                    background-color: $light-gray-1;
+                }
+                #continue-with {
+                    font-size: 12px;
+                    color: $light-gray-1;
+                }
+            }
+            #with-options {
+                margin-top: 36px;
+
+                #with-kakao {
+                    width: 148px;
+                    height: 35px;
+                    background-color: $kakao;
+                    border-radius: 5px;
+                    font-size: 11px;
+                    font-family: 'Blinker';
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    > div {
+                        margin-left: 9.5px;
+                    }
+                }
+            }
+        }
+    }
+}

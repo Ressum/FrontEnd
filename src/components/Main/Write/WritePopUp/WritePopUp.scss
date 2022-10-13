@@ -1,0 +1,101 @@
+@import '/src/style/Color.scss';
+
+#write-pop-up-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #write-pop-up {
+        padding: 22px 25px;
+        background-color: $light-brown-3;
+
+        #write-search-box {
+            background-color: $light-blue;
+            border-radius: 5px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+
+            #search {
+                > div {
+                    font-family: 'BM Dohyeon';
+                    color: $dark-gray;
+                    font-size: 10px;
+                    padding: 15px;
+                    background-color: #fff;
+                    border: 1px solid $light-gray-1;
+
+                    &:last-child {
+                        margin-top: 8px;
+                    }
+                    > input {
+                        margin-left: 10px;
+                    }
+                }
+            }
+            > button {
+                padding: 8px 30px;
+                margin-top: 12px;
+                border-radius: 30px;
+                background-color: #fff;
+                color: $dark-brown-1;
+                font-family: 'BM Jua';
+                font-size: 14px;
+                align-self: center;
+                border: none;
+            }
+        }
+        #book-results-box {
+            margin-top: 10px;
+
+            #book-results-number {
+                color: #000;
+                font-family: 'BM Jua';
+                font-size: 14px;
+
+                > span {
+                    font-style: 'BM Dohyeon';
+                    font-size: 12px;
+                    color: $red;
+                }
+            }
+            #book-results-line {
+                background-color: $orange;
+                height: 2px;
+                margin-top: 4px;
+            }
+            #book-results {
+                height: 245px;
+                overflow: auto;
+
+                .book-result{
+                    display: flex;
+                    padding: 12px 0;
+                    border-bottom: 1px solid $light-gray-1;
+                    .book-result-order {
+                        font-size: 14px;
+                        font-family: 'BM Jua';
+                        padding: 20px 48px;
+                    }
+                    > div {
+                        font-family: 'BM Jua';
+                        > h2 {
+                            font-size: 10px;
+                        }
+                        > h3 {
+                            font-size: 6px;
+                            color: $dark-gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
