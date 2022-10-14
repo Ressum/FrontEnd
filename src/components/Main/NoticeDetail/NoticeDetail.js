@@ -18,7 +18,7 @@ function NoticeDetail() {
                     <img src={noticeDetailImg} alt="noticeDetailImg" />
                     <div id="notice-detail-text">
                         dnsjfkndkjvdskvkslbndsnvbkdanckladnbvkjladnvldanvldanvadvnkdavkdav
-                        advnkdjvndkjnvkjdnvdlsvkndsklvdsnkvdksvdsjlvbdkjlvbnkdjlnckdavcdaknvkdav
+                        advnkdjvndkjnvkjdnvdlsvkndsklvdsnkvdksvdsjlvbdkjlvbn kdjlnckdavcdaknvkdav
                         advdkjnvkjdsnvksfnvklfsnbkljbnckldankvnfskjvndacnadkjcnadklcnvadvnadv
                         adnvjkdanvkdankcsnclasmnkvbdaljvbdaljcbadjklbcdajklbvldjkbvjkldbvlkdv
                         adnbjkvdablvjdbjlkvcbadjlkcbasdbckadljbckjdbcjldbcldbcdcdacladc
