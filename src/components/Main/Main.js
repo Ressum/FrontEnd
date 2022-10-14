@@ -36,7 +36,7 @@ function Main() {
                 <Route path="attendancecheck" element={<AttendanceCheck />} />
                 <Route path="event" element={<Event />} />
                 <Route path="mypage" element={<MyPage />} />
-                <Route path="notice" element={<Notice />} />
+                <Route path="notice/*" element={<Notice />} />
                 <Route path="payment" element={<Payment />} />
                 <Route path="signin" element={<SignIn />} />
                 <Route path="signup" element={<SignUp />} />

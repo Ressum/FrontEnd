@@ -1,70 +1,76 @@
 @import '/src/style/Color.scss';
-body{
-    background-color: $light-brown-3;
-    #notice {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h1 {
-            color: $dark-brown-2;
-            font-size: 25px;
-            font-family: 'BM Dohyeon';
-            margin-top: 100px;
-        }
-        #notice-horizontal-line {
-            height: 0.5px;
-            width: 100%;
-            background-color: $dark-gray;
-            margin-top: 28px;
-            margin-bottom: 36px;
-        }
-    
-        ul {
-            margin-left: 22.5%;
-            margin-right: 22.5%;
-            width: 55%;
-            @media ALL and (max-width:767px) {
-                margin-left: 5%;
-                margin-right: 5%;
-                width: 90%;
-            }
-            li {
-                margin-bottom: 3px;
-                width: 100%;
-                height: 20%;
-                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-                box-sizing: border-box;
-                padding: 18px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-    
-                > div:first-child {
-                    display: flex;
-                    align-items: flex-end;
-                    h3 {
-                        font-size: 24px;
-                        color: $brown;
-                        font-family: 'BM Hanna Pro';
 
-                        @media ALL and (max-width:767px) {
-                            font-size: 22px;
-                        }
-                    }
-                    div {
-                        margin-left: 8px;
-                        font-size: 14px;
-                        color: $gray-1;
-                        font-family: 'BM Hanna Air';
+#notice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: $dark-brown-2;
+        font-size: 25px;
+        font-family: 'BM Dohyeon';
+        margin-top: 100px;
+    }
+
+    #notice-horizontal-line {
+        height: 0.5px;
+        width: 100%;
+        background-color: $dark-gray;
+        margin-top: 28px;
+        margin-bottom: 36px;
+    }
+
+    ul {
+        margin-left: 22.5%;
+        margin-right: 22.5%;
+        width: 55%;
+
+        @media ALL and (max-width:767px) {
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 90%;
+        }
+
+        li {
+            margin-bottom: 3px;
+            width: 100%;
+            height: 20%;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+            box-sizing: border-box;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            >div:first-child {
+                display: flex;
+                align-items: flex-end;
+
+                h3 {
+                    font-size: 24px;
+                    color: $brown;
+                    font-family: 'BM Hanna Pro';
+
+                    @media ALL and (max-width:767px) {
+                        font-size: 22px;
                     }
                 }
-                > div:last-child {
-                    margin-top: 1%;
+
+                div {
+                    margin-left: 8px;
                     font-size: 14px;
+                    color: $gray-1;
                     font-family: 'BM Hanna Air';
                 }
             }
-            margin-bottom: 70px;
+
+            >div:last-child {
+                margin-top: 1%;
+                font-size: 14px;
+                font-family: 'BM Hanna Air';
+            }
         }
+
+        margin-bottom: 70px;
     }
 }
