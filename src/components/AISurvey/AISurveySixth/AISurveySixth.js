@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './AISurveySixth.scss';
 
 function AISurveySixth() {
@@ -17,7 +18,11 @@ function AISurveySixth() {
                     <div>딱히 생각나는 책이 없다면, 이 항목을 넘어가주세요!</div>
                 </div>
             </div>
-            <button>다음</button>
+            <Link to="/main/aisurveyresult">
+                <button>
+                    다음
+                </button>
+            </Link>
         </form>
     );
 }
