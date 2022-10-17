@@ -53,7 +53,7 @@ function Write() {
                                     <input type="checkbox" id="public" />
                                     <label htmlFor="public">
                                         <div></div>
-                                        글공개
+                                        글 비공개
                                     </label>
                                 </div>
                             </div>
