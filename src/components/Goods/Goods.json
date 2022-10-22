@@ -1,0 +1,28 @@
+{
+    "goodsList": [
+        {
+            "goodsId": 1349283,
+            "thumbnailUrl": "",
+            "goodsName": "",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 3194938,
+            "thumbnailUrl": "",
+            "goodsName": "",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 2149732,
+            "thumbnailUrl": "",
+            "goodsName": "",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 1928374,
+            "thumbnailUrl": "",
+            "goodsName": "",
+            "goodsPrice": 5000
+        }
+    ]
+}
