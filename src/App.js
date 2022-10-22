@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="View" element={<View />} />
           <Route path="aisurvey/*" element={<AISurvey />} />
-          <Route path="goods" element={<Goods />} />
+          <Route path="goods/*" element={<Goods />} />
           <Route path="main/*" element={<Main />} />
           <Route path='/' element={<Navigate to="main"/>} />
         </Routes>
