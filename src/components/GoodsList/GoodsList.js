@@ -9,7 +9,7 @@ function GoodsList() {
                 {
                     GoodsData.goodsList.map(goodsInfo => (
                         <li key={goodsInfo.goodsId}>
-                            <img src={goodsInfo.thumbnailUrl} />
+                            <img src={goodsInfo.thumbnailUrl} alt="goodsThumbnail" />
                             <h6>{goodsInfo.goodsName}</h6>
                             <div>{goodsInfo.goodsPrice}₩</div>
                         </li>
