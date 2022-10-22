@@ -1,10 +1,13 @@
-import GoodsData from './Goods.json';
+import { Route, Routes } from 'react-router-dom';
+
 import './Goods.scss';
+import GoodsDetail from '../GoodsDetail/GoodsDetail';
+import GoodsList from '../GoodsList/GoodsList';
 import ShoppingBag from 'images/Goods/shopping-bag.svg';
 import Profile from 'images/Goods/profile.svg';
 
 function Goods() {
-    return(
+    return (
         <div id="goods">
             <div id="goods-header">
                 <div id="goods-logo">
@@ -17,18 +20,10 @@ function Goods() {
                     <img id="goods-profile" src={Profile} />
                 </div>
             </div>
-            <div id="goods-title">Items</div>
-            <ul id="goods-list">
-                {
-                    GoodsData.goodsList.map(goodsInfo => (
-                        <li key={goodsInfo.goodsId}>
-                            <img src={goodsInfo.thumbnailUrl} />
-                            <h6>{goodsInfo.goodsName}</h6>
-                            <div>{goodsInfo.goodsPrice}₩</div>
-                        </li>
-                    ))
-                }
-            </ul>
+            <Routes>
+                <Route path="/" element={<GoodsList />} />
+                <Route path="id/*" element={<GoodsDetail />} />
+            </Routes>
         </div>
     );
 }
