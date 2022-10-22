@@ -16,8 +16,8 @@ function Goods() {
                     Shop
                 </div>
                 <div id="goods-user-info">
-                    <img id="goods-shopping-bag" src={ShoppingBag} />
-                    <img id="goods-profile" src={Profile} />
+                    <img id="goods-shopping-bag" src={ShoppingBag} alt="shoppingBag" />
+                    <img id="goods-profile" src={Profile} alt="profile" />
                 </div>
             </div>
             <Routes>

@@ -8,7 +8,7 @@ function GoodsDetail({
 }) {
     return (
         <form id="goods-detail">
-            <img src={imgUrl} id="goods-img" />
+            <img src={imgUrl} id="goods-img" alt="goodsImg" />
             <div id="goods-detail-info">
                 <div id="goods-detail-info--text">
                     <h1 id="goods-name">{itemName}</h1>

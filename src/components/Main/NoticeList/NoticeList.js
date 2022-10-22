@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import './NoticeList.scss';
-import bell from 'images/bell.svg';
-import { Link, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function NoticeList() {
     const noticeId = useRef([
