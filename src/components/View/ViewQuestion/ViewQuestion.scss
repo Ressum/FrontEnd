@@ -19,6 +19,9 @@
             > input[type=checkbox]:checked ~ div {
                 display: block;
             }
+            > input[type=checkbox]:checked ~ label > img {
+                transform: rotate(45deg);
+            }
             > label {
                 background-color: $light-brown-2;
                 color: $brown;
