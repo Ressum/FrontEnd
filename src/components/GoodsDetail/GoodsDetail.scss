@@ -1,0 +1,52 @@
+@import '/src/style/Color.scss';
+
+#goods-detail {
+    display: flex;
+    column-gap: 70px;
+    margin: 0 auto;
+    width: min-content;
+
+    #goods-img {
+        height: 35rem;
+        width: 40rem;
+    }
+
+    #goods-detail-info {
+        font-family: 'BM Dohyeon';
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        #goods-detail-info--text {
+            #goods-name {
+                font-size: 60px;
+                margin-bottom: 8px;
+            }
+
+            #goods-price {
+                font-size: 26px;
+                color: $gray-2;
+                margin-bottom: 24px;
+            }
+
+            #goods-info {
+                font-size: 22px;
+                color: $gray-2;
+                line-height: 40px;
+            }
+        }
+
+        >button {
+            width: 90%;
+            height: 65px;
+            border: none;
+            border-radius: 10px;
+            background-color: $light-orage;
+            color: white;
+            font-family: 'Blinker';
+            font-weight: 700;
+            font-size: 20px;
+        }
+    }
+}

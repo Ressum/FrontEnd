@@ -1,0 +1,23 @@
+@import '/src/style/Color.scss';
+
+#goods {
+    #goods-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // 1rem == 16px
+        margin: 2rem 4rem 6.5rem ;
+        
+        #goods-logo {
+            font-size: 30px;
+            font-family: 'Bodoni';
+            font-weight: bold;
+            letter-spacing: 0.15rem;
+            color: $brown;
+        }
+        #goods-user-info {
+            display: flex;
+            column-gap: 1.5rem;
+        }
+    }
+}

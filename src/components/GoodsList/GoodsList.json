@@ -1,0 +1,100 @@
+{
+    "goodsList": [
+        {
+            "goodsId": 1349283,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 3194938,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 2149732,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 1928374,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 1342283,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 3195938,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 2141732,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 1938374,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 1749283,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 3194931,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 2149739,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 1928334,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 1349263,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 3198938,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 2149702,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 1928074,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        }
+    ]
+}

@@ -1,7 +1,5 @@
-import { useRef } from 'react';
 import './Notice.scss';
-import bell from 'images/bell.svg';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import NoticeList from '../NoticeList/NoticeList';
 import NoticeDetail from '../NoticeDetail/NoticeDetail';
 
