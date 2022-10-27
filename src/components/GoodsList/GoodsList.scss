@@ -14,21 +14,26 @@
     text-align: center;
     row-gap: 2rem;
 
-    >li {
-        font-family: 'Blinker';
+    >a {
+        text-decoration: none;
 
-        >img {
-            height: 18rem;
-            width: 20rem;
-        }
+        >li {
+            font-family: 'Blinker';
 
-        >h6 {
-            font-size: 18px;
-        }
+            >img {
+                height: 18rem;
+                width: 20rem;
+            }
 
-        >div {
-            font-size: 14px;
-            color: $gray-1;
+            >h6 {
+                font-size: 18px;
+                color: #000;
+            }
+
+            >div {
+                font-size: 14px;
+                color: $gray-1;
+            }
         }
     }
 }
