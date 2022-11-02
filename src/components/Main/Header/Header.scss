@@ -60,9 +60,15 @@ header {
     }
     >#header-profile-image {
         position: absolute;
-        right: 20px;
+        right: 25px;
         align-self: center;
         text-decoration: none;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        > img{
+            width: 45px;
+        }
     }
 }
 
