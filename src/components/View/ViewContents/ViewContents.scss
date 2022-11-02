@@ -109,49 +109,40 @@
     }
 
     #view-introduce {
-        width: 1300px;
-        height: 1600px;
+        width: 75%;
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: 150px;
-
-        >img {
-            position: absolute;
-
-            &:nth-child(2) {
-                top: 515px;
-                right: 62px;
-            }
-
-            &:nth-child(3) {
-                left: 50%;
-                transform: translateX(-50%);
-                bottom: 0;
-            }
-        }
+        display: grid;
+        row-gap: 80px;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 150px auto 0;
 
         >div {
             color: $brown;
             font-family: 'BM Dohyeon';
-            position: absolute;
 
-            &:nth-child(4) {
-                right: 0;
-                top: 170px;
+            &#introduce1-explanation {
                 font-size: 40px;
+                align-self: center;
                 text-align: center;
             }
 
-            &:nth-child(5) {
-                top: 700px;
-                font-size: 36px;
+            &#introduce2-explanation {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                > div:nth-child(1) {
+                    font-size: 36px;
+                    margin-bottom: 80px;
+                }
+    
+                > div:nth-child(2) {
+                    font-size: 50px;
+                }
             }
-
-            &:nth-child(6) {
-                top: 830px;
-                font-size: 50px;
-            }
+        }
+        > img:last-child {
+            grid-column: 1 / 3;
         }
     }
 
