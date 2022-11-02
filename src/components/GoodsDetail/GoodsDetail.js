@@ -34,7 +34,7 @@ function GoodsDetail({
                     <h2 id="goods-price">{goodsPrice}₩</h2>
                     <div id="goods-info">{goodsDescription}</div>
                 </div>
-                <button id="goods-detail-info--purchase">걸제</button>
+                <button id="goods-detail-info--purchase">결제</button>
             </div>
         </form>
     );
