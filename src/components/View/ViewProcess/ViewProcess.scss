@@ -9,9 +9,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'BM Jua';
     
     > h1 {
+        font-family: 'BM Jua';
         font-size: 80px;
         color: $brown;
         margin-top: 52px;
@@ -24,15 +24,25 @@
         height: 450px;
         > div {
             width: 250px;
-            background-color: $light-gray-2;
+            background-color: $light-orage-2;
             border-radius: 20px;
             display: flex;
-            justify-content: center;
-            align-items: flex-end;
+            flex-direction: column;
+            align-items: center;
             box-sizing: border-box;
-            padding-bottom: 163px;
-            color: $orange;
-            font-size: 40px;
+            padding: 0 20px;
+            font-family: 'Blinker';
+            font-weight: bold;
+
+            > h2 {
+                font-size: 35px;
+                margin: 140px 0 56px;
+                color: $brown;
+            }
+            > div {
+                font-size: 20px;
+                color: $orange;
+            }
         }
     }
 }

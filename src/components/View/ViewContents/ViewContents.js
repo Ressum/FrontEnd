@@ -56,19 +56,21 @@ function ViewContents() {
             </div>
             <div id="view-introduce">
                 <img src={introduce1} alt="introduce1" />
-                <img src={introduce2} alt="introduce2" />
-                <img src={introduceMain} alt="introduceMain" />
-                <div>
+                <div id="introduce1-explanation">
                     책과 책의 연결로 천천히,<br />
                     확실하게 폭넓은 분야를 익혀보아요
                 </div>
-                <div>
-                    문해력, 어휘력 걱정이 되시나요?
+                <div id="introduce2-explanation">
+                    <div>
+                        문해력, 어휘력 걱정이 되시나요?
+                    </div>
+                    <div>
+                        래썸 공책의 단계학습으로<br />
+                        보다 효과적인 독서를 해봐요!
+                    </div>
                 </div>
-                <div>
-                    래썸 공책의 단계학습으로<br />
-                    보다 효과적인 독서를 해봐요!
-                </div>
+                <img src={introduce2} alt="introduce2" />
+                <img src={introduceMain} alt="introduceMain" />
             </div>
             <div id="view-book-report">
                 <div>
