@@ -12,7 +12,7 @@ function GoodsList() {
     useEffect(() => { // 임시 코드
         const imgArr = [];
         for (let i = 0; i < GoodsData.goodsList.length; i++) {
-            const imgIndex = Math.floor(Math.random() * 4);
+            const imgIndex = i % 4;
             imgArr.push(imgIndex === 0 ? goods1
                         : imgIndex === 1 ? goods2
                         : imgIndex === 2 ? goods3
