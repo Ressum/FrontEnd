@@ -22,7 +22,7 @@ function Goods() {
             </div>
             <Routes>
                 <Route path="/" element={<GoodsList />} />
-                <Route path="id/*" element={<GoodsDetail />} />
+                <Route path="id/:id" element={<GoodsDetail />} />
             </Routes>
         </div>
     );

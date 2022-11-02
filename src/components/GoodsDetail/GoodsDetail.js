@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import './GoodsDetail.scss';
 import goods1 from 'images/Goods/goods1.svg';
 import goods2 from 'images/Goods/goods2.svg';
@@ -11,15 +11,12 @@ function GoodsDetail({
     goodsPrice = 30000,
     goodsDescription = "ndsjnksnvadkvdbiodavdnalvdancaca\naskvnadlkalknvldanvdoavikadnlkcvnas\nvadlknvsalknvlaksdnvklsacnlsacsa\ncasnklcnadklvnlkcdankccnakscnsalncs\ncaslkcnadklvndalncvladnclakdnclasnc\nascklasnclkasdncldncdanclknadcda\ncadnklcdanklcdanlkcdanlcnadlkndaa"
 }) {
-    const location = useLocation();
+    const {id} = useParams();
     const [goodsID, setGoodsID] = useState(null);
     const [dummyImg, setDummyImg] = useState();
     useEffect(() => {
-        setGoodsID(location.pathname.slice(
-            location.pathname.lastIndexOf('/'),
-            location.pathname.length
-        )); // 굿즈 아이디 파싱
-        const imgIndex = Math.floor(Math.random() * 4);
+        setGoodsID(id);
+        const imgIndex = id % 4 - 1;
         setDummyImg(
             imgIndex === 0 ? goods1
             : imgIndex === 1 ? goods2
