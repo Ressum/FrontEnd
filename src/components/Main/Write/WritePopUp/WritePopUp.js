@@ -33,9 +33,17 @@ function WritePopUp({ setShowPopUp }) {
                 bookRegistrant: '',
             },
         ]
-    })
+    });
+    const writePopUpBg = useRef(null);
+
     return (
-        <div id="write-pop-up-bg">
+        <div id="write-pop-up-bg"
+            ref={writePopUpBg}
+            onClick={e => {
+                if(e.target === writePopUpBg.current)
+                    setShowPopUp(false);
+            }}
+        >
             <div id="write-pop-up">
                 <div id="write-search-box">
                     <div id="search">
