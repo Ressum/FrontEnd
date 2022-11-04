@@ -13,7 +13,7 @@ function AISurveySixth() {
                     </div>
                 </div>
                 <div id="ai-book-title">
-                    <input placeholder='띄어쓰기를 포함한 정확한 책 제목을 말씀해주세요!' />
+                    <input placeholder='책 제목을 말씀해주세요!' />
                     <div id="ai-division-line"></div>
                     <div>딱히 생각나는 책이 없다면, 이 항목을 넘어가주세요!</div>
                 </div>

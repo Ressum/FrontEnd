@@ -17,6 +17,10 @@ function Header() {
                         <img src={homeIcon} alt="home" className="notice"/>
                         홈
                 </Link>
+                <Link to='/main/write'>
+                    <img src={writeIcon} alt="write" className="write" />
+                    글쓰기
+                </Link>
                 <Link to='/main/Event'>
                     <img src={partyPopperIcon} alt="event" />
                     이벤트
@@ -24,10 +28,6 @@ function Header() {
                 <Link to='/main/notice'>
                     <img src={calenderIcon} alt="notice" className="notice"/>
                     공지사항
-                </Link>
-                <Link to='/main/write'>
-                    <img src={writeIcon} alt="write" className="write" />
-                    글쓰기
                 </Link>
             </div>
             <Link id="header-profile-image" to='/main/mypage'>
