@@ -9,7 +9,7 @@ function Header() {
     return(
         <header>
             <Link id="logo" to='/main/Home'>
-                <h1>Rasham</h1>
+                <h1>Ressum</h1>
                 <h6>맞춤형 독서 교육 플랫폼</h6>
             </Link>
             <div>
