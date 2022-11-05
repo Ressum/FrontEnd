@@ -14,6 +14,7 @@
                 font-size: 50px;
                 color: $brown;
                 font-family: 'BM Dohyeon';
+                line-height: 125%;
             }
 
             >h2 {
@@ -44,12 +45,14 @@
                             font-size: 50px;
                             font-weight: 600;
                             font-family: 'Blinker';
+                            line-height: 125%;
                         }
 
                         >h3 {
                             font-size: 30px;
                             font-family: 'Blinker';
                             margin-top: 60px;
+                            line-height: 125%;
                         }
                     }
 
@@ -125,6 +128,7 @@
                 font-size: 40px;
                 align-self: center;
                 text-align: center;
+                line-height: 125%;
             }
 
             &#introduce2-explanation {
@@ -138,6 +142,7 @@
     
                 > div:nth-child(2) {
                     font-size: 50px;
+                    line-height: 125%;
                 }
             }
         }
