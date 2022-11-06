@@ -5,7 +5,7 @@ function AISurveyFirst() {
     return (
         <form>
             <div>
-                <div>
+                <div className='questions'>
                     <h1>안녕하세요,<br />사밀이님!</h1>
                     <div>
                         래썸 AI가 사밀이님의<br />
