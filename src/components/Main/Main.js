@@ -23,14 +23,14 @@ import BottomBar from 'components/Main/BottomBar/BottomBar';
 import MainPopUp from './MainPopUp/MainPopUp';
 
 function Main() {
-    const [showPopUp, setShowPopUp] = useState(true);
+    //const [showPopUp, setShowPopUp] = useState(true);
     return (
         <div id="main">
             <Header />
             <NoticeShopButton />
-            {
+            {/*
                 showPopUp ? <MainPopUp setShowPopUp={setShowPopUp} /> : null
-            }
+            */}
             <Routes>
                 <Route path="home" element={<Home />} />
                 <Route path="attendancecheck" element={<AttendanceCheck />} />
