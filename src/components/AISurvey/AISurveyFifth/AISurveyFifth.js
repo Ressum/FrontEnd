@@ -9,7 +9,7 @@ function AISurveyFifth() {
     return (
         <form>
             <div>
-                <div>
+                <div className='questions'>
                     <h1>좋아요,<br />얼마 안 남았어요!</h1>
                     <div>
                         한 달에 평소 책을 얼마나<br />

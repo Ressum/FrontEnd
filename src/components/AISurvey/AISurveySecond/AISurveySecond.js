@@ -5,7 +5,7 @@ function AISurveySecond() {
     return (
         <form>
             <div>
-                <div>
+                <div className='questions'>
                     <h1>좋아하는 과목은<br />어떻게 되시나요?</h1>
                     <div>
                         국어, 수학, 사회<br />

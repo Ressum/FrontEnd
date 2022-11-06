@@ -1,5 +1,12 @@
 @import '/src/style/Color.scss';
-
+.questions{
+    h1{
+        line-height: 135%;
+    }
+    div{
+        line-height: 135%;
+    }
+}
 #ai-survey-third {
     width: 620px;
     display: flex;

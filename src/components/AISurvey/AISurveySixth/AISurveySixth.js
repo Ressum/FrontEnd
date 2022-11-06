@@ -5,7 +5,7 @@ function AISurveySixth() {
     return (
         <form>
             <div>
-                <div>
+                <div className='questions'>
                     <h1>그것 참<br />멋진데요?</h1>
                     <div>
                         이때까지 읽었던 책중,<br />

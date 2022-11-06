@@ -5,7 +5,7 @@ function AISurveyThird() {
     return (
         <form>
             <div>
-                <div>
+                <div className='questions'>
                     <h1>분량이 어떤 책을<br />선호하시나요?</h1>
                     <div>
                         (정확한 페이지 수 기입)<br />

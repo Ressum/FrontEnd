@@ -5,7 +5,7 @@ function AISurveyFourth() {
     return (
         <form>
             <div>
-                <div>
+                <div className='questions'>
                     <h1>난이도가 어떤 책을<br />선호하시나요?</h1>
                     <div>
                         (난이도 정확하게 기입)<br />

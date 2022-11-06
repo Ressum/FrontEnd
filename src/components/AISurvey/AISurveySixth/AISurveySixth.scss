@@ -1,5 +1,15 @@
 @import '/src/style/Color.scss';
 
+
+.questions{
+    h1{
+        line-height: 135%;
+    }
+    div{
+        width: 110%;
+        line-height: 135%;
+    }
+}
 #ai-book-title {
     margin-left: 110px;
     width: 580px;
