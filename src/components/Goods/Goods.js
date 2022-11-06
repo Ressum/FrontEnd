@@ -11,7 +11,7 @@ function Goods() {
         <div id="goods">
             <div id="goods-header">
                 <div id="goods-logo">
-                    Rasham<br />
+                    Ressum<br />
                     Goods<br />
                     Shop
                 </div>
