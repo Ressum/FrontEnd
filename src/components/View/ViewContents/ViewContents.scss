@@ -13,14 +13,15 @@
             >h1 {
                 font-size: 50px;
                 color: $brown;
-                font-family: 'BM Dohyeon';
+                font-family: 'NanumSquare EB';
                 line-height: 125%;
             }
 
             >h2 {
                 font-size: 35px;
                 color: $brown;
-                font-family: 'BM Dohyeon';
+                font-family: 'NanumSquareR';
+                font-weight: 900;
                 margin-top: 50px;
             }
 
@@ -44,13 +45,13 @@
                         >h2 {
                             font-size: 50px;
                             font-weight: 600;
-                            font-family: 'Blinker';
+                            font-family: 'NanumSquare EB';
                             line-height: 125%;
                         }
 
                         >h3 {
                             font-size: 30px;
-                            font-family: 'Blinker';
+                            font-family: 'NanumSquare EB';
                             margin-top: 60px;
                             line-height: 125%;
                         }
@@ -86,7 +87,7 @@
                                 bottom: 24px;
                                 font-size: 20px;
                                 font-weight: 600;
-                                font-family: 'Blinker';
+                                font-family: 'NanumSquare EB';
                             }
                         }
                     }
@@ -103,7 +104,7 @@
                     border-radius: 10px;
                     background-color: $light-orage;
                     color: white;
-                    font-family: 'Blinker';
+                    font-family: 'NanumSquare EB';
                     font-weight: 700;
                     font-size: 20px;
                 }
@@ -122,7 +123,7 @@
 
         >div {
             color: $brown;
-            font-family: 'BM Dohyeon';
+            font-family: 'NanumSquare EB';
 
             &#introduce1-explanation {
                 font-size: 40px;
@@ -159,14 +160,14 @@
         >div {
             >h1 {
                 font-size: 50px;
-                font-family: 'BM Dohyeon';
+                font-family: 'NanumSquare EB';
                 text-align: right;
                 color: $brown;
             }
 
             >h2 {
                 font-size: 32px;
-                font-family: 'BM Dohyeon';
+                font-family: 'NanumSquare EB';
                 text-align: right;
                 color: $brown;
                 margin-top: 35px;
@@ -183,8 +184,7 @@
 
                 >div {
                     margin-left: 38px;
-                    font-family: 'BM Jua';
-
+                    font-family: 'NanumSquare EB';
                     >h3 {
                         font-size: 20px;
                         color: $dark-gray;
@@ -225,7 +225,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-family: 'BM Dohyeon';
+        font-family: 'NanumSquare EB';
         color: $brown;
 
         >h1 {

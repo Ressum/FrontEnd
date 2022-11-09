@@ -75,7 +75,7 @@ function ViewContents() {
             <div id="view-book-report">
                 <div>
                     <h1>
-                        랫썸에서 책을 읽고 독서록을 나눠보아요!
+                        래썸에서 책을 읽고 독서록을 나눠보아요!
                     </h1>
                     <h2>
                         다른 친구들의 독서록을 보며 다양한 시각을 가질 수 있어요.
