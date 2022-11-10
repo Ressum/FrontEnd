@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
-import './AISurveyFourth.scss';
+import './AISurvey4.scss';
 
-function AISurveyFourth() {
+function AISurvey4() {
     return (
         <form>
-            <div>
+            <div className='aisurvey-4'>
                 <div className='questions'>
-                    <h1>난이도가 어떤 책을<br />선호하시나요?</h1>
+                    <h1>분량이 어떤 책을<br />선호하시나요?</h1>
                     <div>
-                        (난이도 정확하게 기입)<br />
-                        (난이도 정확하게 기입) 중에 <br />
+                        (정확한 페이지 수 기입)<br />
+                        (정확한 페이지 수 기입) 중에<br />
                         골라주세요
                     </div>
                 </div>
-                <div id="ai-survey-fourth">
+                <div id="ai-survey-third">
                 </div>
             </div>
             <Link to="/aisurvey/aisurvey5">
@@ -25,4 +25,4 @@ function AISurveyFourth() {
     );
 }
 
-export default AISurveyFourth;
+export default AISurvey4;

@@ -1,0 +1,19 @@
+@import '/src/style/Color.scss';
+
+.aisurvey-4 {
+    .questions {
+        h1{
+            line-height: 135%;
+        }
+        div{
+            line-height: 135%;
+        }
+    }
+    
+    #ai-survey-third {
+        width: 620px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

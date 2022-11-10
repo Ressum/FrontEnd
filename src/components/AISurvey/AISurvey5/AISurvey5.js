@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import './AISurveySixth.scss';
+import './AISurvey5.scss';
 
-function AISurveySixth() {
+function AISurvey5() {
     return (
         <form>
-            <div>
+            <div className='aisurvey-5'>
                 <div className='questions'>
                     <h1>그것 참<br />멋진데요?</h1>
                     <div>
@@ -27,4 +27,4 @@ function AISurveySixth() {
     );
 }
 
-export default AISurveySixth;
+export default AISurvey5;
