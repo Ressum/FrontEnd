@@ -1,19 +1,28 @@
 import { Link } from 'react-router-dom';
 import './SignIn.scss';
 import kakao from 'images/SignIn/kakao.svg';
+import { useState } from 'react';
+
+const onSubmit = e => {
+    e.preventDefault();
+
+}
 
 function SignIn() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
     return(
         <div id="sign-in">
-            <form>
+            <form onSubmit={onSubmit}>
                 <div id="input-form">
                     <div>
                         <label htmlFor="email">이메일</label>
-                        <input id="email" placeholder="이메일을 입력해주세요." />
+                        <input id="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="이메일을 입력해주세요." />
                     </div>
                     <div>
                         <label htmlFor="password">비밀번호</label>
-                        <input type="password" id="password" placeholder="비밀번호를 입력해주세요." />
+                        <input type="password" id="password" value={password} onChagne={e => setPassword(e.target.value)} placeholder="비밀번호를 입력해주세요." />
                     </div>
                 </div>
                 <Link to="/main/LostPassword">비밀번호를 잊어버리셨나요?</Link>
