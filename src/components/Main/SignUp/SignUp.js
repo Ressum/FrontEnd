@@ -1,3 +1,4 @@
+import React from 'react';
 import './SignUp.scss';
 import male from 'images/SignUp/male.svg';
 import female from 'images/SignUp/female.svg';

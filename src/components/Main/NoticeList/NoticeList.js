@@ -1,3 +1,4 @@
+import React from 'react';
 import { useRef } from 'react';
 import './NoticeList.scss';
 import { Link } from 'react-router-dom';

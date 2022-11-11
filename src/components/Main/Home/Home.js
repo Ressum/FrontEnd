@@ -1,3 +1,4 @@
+import React from 'react';
 import './Home.scss';
 import cover_21941 from 'images/Home/cover_21941.svg';
 import cover_21942 from 'images/Home/cover_21942.svg';

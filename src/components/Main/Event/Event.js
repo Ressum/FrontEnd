@@ -1,3 +1,4 @@
+import React from 'react';
 import './Event.scss';
 import event1 from 'images/Event/event1.svg';
 import event2 from 'images/Event/event2.svg';

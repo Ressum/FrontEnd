@@ -1,3 +1,4 @@
+import React from 'react';
 import './NoticeDetail.scss';
 import noticeDetailImg from 'images/Notice/notice-detail-img.svg';
 
