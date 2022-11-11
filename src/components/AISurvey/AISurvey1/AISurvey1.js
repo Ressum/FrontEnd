@@ -6,27 +6,31 @@ function AISurvey1() {
         <form>
             <div className="aisurvey-1">
                 <div className='questions'>
-                    <h1>안녕하세요,<br />사밀이님!</h1>
+                    <h1>안녕하세요, 사밀이님!</h1>
                     <div>
-                        래썸 AI가 사밀이님의<br />
-                        편한 독서를 도와드려요!<br />
+                        래썸 AI가 사밀이님의
+                        편한 독서를 도와드려요!
                         간단한 설문조사 어떠세요?
                     </div>
                 </div>
-                <div id="ai-user-info">
-                    <h2>성별은 무엇인가요?</h2>
-                    <div>
-                        <input type="radio" name="ai-gender" id="ai-male" required />
-                        <label htmlFor="ai-male" className="ai-gender">
-                            남성
-                        </label>
-                        <input type="radio" name="ai-gender" id="ai-female" />
-                        <label htmlFor="ai-female" className="ai-gender">
-                            여성
-                        </label>
+                <div id="ai-survey-user-info">
+                    <div id="ai-survey-user-info__1">
+                        <h2>성별은 무엇인가요?</h2>
+                        <div>
+                            <input type="radio" name="ai-gender" id="ai-male" required />
+                            <label htmlFor="ai-male" className="ai-gender">
+                                남성
+                            </label>
+                            <input type="radio" name="ai-gender" id="ai-female" />
+                            <label htmlFor="ai-female" className="ai-gender">
+                                여성
+                            </label>
+                        </div>
                     </div>
-                    <h2>나이는요?</h2>
-                    <div><input />세</div>
+                    <div id="ai-survey-user-info__2">
+                        <h2>나이는요?</h2>
+                        <div><input />세</div>
+                    </div>
                 </div>
             </div>
             <Link to="/aisurvey/aisurvey2">
