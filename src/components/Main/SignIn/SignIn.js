@@ -2,19 +2,73 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './SignIn.scss';
 import kakao from 'images/SignIn/kakao.svg';
+import { useEffect, useState } from 'react';
+import { collection, doc, updateDoc, onSnapshot } from "firebase/firestore";
+import { db } from "../../../firebase_config"
+import { useNavigate } from 'react-router-dom';
 
-function SignIn() {
+function SignIn(props) {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [userData, setUserData] = useState();
+    const navigate = useNavigate();
+    let find = false;
+
+    useEffect(() => {
+        onSnapshot(collection(db, "User"), (snapshot) => {
+            setUserData(snapshot._snapshot.docChanges)
+        });
+    }, []);
+
+    const onSubmit = e => {
+        e.preventDefault();
+        userData.forEach(e => {
+            if (email === e.doc.data.value.mapValue.fields.email.stringValue && password === e.doc.data.value.mapValue.fields.password.stringValue) {
+                props.refreshFunction({
+                    id: e.doc.data.value.mapValue.fields.email.stringValue,
+                    pw: e.doc.data.value.mapValue.fields.password.stringValue,
+                    isLogin: true
+                })
+                localStorage.setItem('user', JSON.stringify({
+                    id: e.doc.data.value.mapValue.fields.email.stringValue,
+                    pw: e.doc.data.value.mapValue.fields.password.stringValue,
+                    name: e.doc.data.value.mapValue.fields.name.stringValue,
+                    isLogin: true
+                }))
+                const login = doc(db, "isLogin", "yNdLxj7DCfVRMO34mtvw");
+                updateDoc(login, {
+                    isLogin: true
+                });
+                alert('로그인에 성공했습니다!')
+                navigate('/')
+                find = true;
+            }
+        });
+        if (!find) {
+            const login = doc(db, "isLogin", "yNdLxj7DCfVRMO34mtvw");
+            updateDoc(login, {
+                isLogin: false
+            });
+            props.refreshFunction({
+                id: null,
+                pw: null,
+                isLogin: false,
+            })
+            alert('로그인 오류 : 아이디나 비밀번호를 다시 확인해주세요.')
+        }
+    }
+
     return(
         <div id="sign-in">
-            <form>
+            <form onSubmit={onSubmit}>
                 <div id="input-form">
                     <div>
                         <label htmlFor="email">이메일</label>
-                        <input id="email" placeholder="이메일을 입력해주세요." />
+                        <input id="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="이메일을 입력해주세요." />
                     </div>
                     <div>
                         <label htmlFor="password">비밀번호</label>
-                        <input type="password" id="password" placeholder="비밀번호를 입력해주세요." />
+                        <input type="password" id="password" value={password} onChagne={e => setPassword(e.target.value)} placeholder="비밀번호를 입력해주세요." />
                     </div>
                 </div>
                 <Link to="/main/LostPassword">비밀번호를 잊어버리셨나요?</Link>
