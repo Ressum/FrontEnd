@@ -1,3 +1,4 @@
+import React from 'react';
 import './Payment.scss';
 import bookImg from 'images/Payment/book.svg';
 

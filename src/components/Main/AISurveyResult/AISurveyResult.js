@@ -1,3 +1,4 @@
+import React from 'react';
 import './AISurveyResult.scss';
 import bookCover from 'images/AISurvey/book-cover.svg';
 import { Link } from 'react-router-dom';

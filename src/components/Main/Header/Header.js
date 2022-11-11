@@ -1,3 +1,4 @@
+import React from 'react';
 import './Header.scss';
 import homeIcon from 'images/Header/home.svg';
 import partyPopperIcon from 'images/Header/party-popper.svg';

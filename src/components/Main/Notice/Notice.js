@@ -1,3 +1,4 @@
+import React from 'react';
 import './Notice.scss';
 import { Route, Routes } from 'react-router-dom';
 import NoticeList from '../NoticeList/NoticeList';
