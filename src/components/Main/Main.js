@@ -1,3 +1,4 @@
+import React, { useContext } from 'react';
 import {
     Routes,
     Route,
@@ -21,9 +22,15 @@ import AISurveyResult from './AISurveyResult/AISurveyResult';
 import './Main.scss';
 import BottomBar from 'components/Main/BottomBar/BottomBar';
 import MainPopUp from './MainPopUp/MainPopUp';
+import { UserContext } from 'App';
 
 function Main() {
     //const [showPopUp, setShowPopUp] = useState(true);
+    const { loginUser, setLoginUser } = useContext(UserContext);
+    const refreshFunction = (data) => {
+        setLoginUser(data);
+    };
+
     return (
         <div id="main">
             <Header />
@@ -38,8 +45,12 @@ function Main() {
                 <Route path="mypage" element={<MyPage />} />
                 <Route path="notice/*" element={<Notice />} />
                 <Route path="payment" element={<Payment />} />
-                <Route path="signin" element={<SignIn />} />
-                <Route path="signup" element={<SignUp />} />
+                {false ? null :
+                    <>
+                        <Route path="signin" element={<SignIn refreshFunction={refreshFunction} user={loginUser} />} />
+                        <Route path="signup" element={<SignUp />} />
+                    </>
+                }
                 <Route path="write" element={<Write />} />
                 <Route path="lostpassword" element={<LostPassword />} />
                 <Route path="aisurveyresult" element={<AISurveyResult />} />

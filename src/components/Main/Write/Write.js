@@ -1,3 +1,4 @@
+import React from 'react';
 import photo from 'images/Write/photo.svg';
 import search from 'images/search.svg';
 import './Write.scss';

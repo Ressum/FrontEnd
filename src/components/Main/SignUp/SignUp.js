@@ -1,15 +1,15 @@
+import React from 'react';
 import './SignUp.scss';
 import male from 'images/SignUp/male.svg';
 import female from 'images/SignUp/female.svg';
 import search from 'images/search.svg';
 import { useState } from 'react';
-
-const onSubmit = e => {
-    e.preventDefault();
-
-}
+import { collection, doc, setDoc } from "firebase/firestore";
+import { db } from "../../../firebase_config"
+import { useNavigate } from 'react-router-dom';
 
 function SignUp() {
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [gender, setGender] = useState('');
     const [password, setPassword] = useState('');
@@ -21,7 +21,25 @@ function SignUp() {
         month: '',
         day: ''
     });
-
+    const onSubmit = e => {
+        e.preventDefault();
+        if (rePassword !== password) {
+            alert("비밀번호가 일치하지 않습니다.");
+        } else {
+            const newUserRef = doc(collection(db, "User"));
+            // later...
+            setDoc(newUserRef, {
+                email: email,
+                password: password,
+                gender: gender,
+                address: detailAddress,
+                zipCode: zipCode,
+                birth: birth
+            });
+            alert('회원가입이 완료되었습니다!')
+            navigate('/')
+        }
+    }
     return(
         <div id="sign-up">
             <form onSubmit={onSubmit}>
@@ -29,9 +47,7 @@ function SignUp() {
                     <div id="email-gender-container">
                         <div id="email-container">
                             <label htmlFor="email">이메일</label>
-                            <input id="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="이메일" pattern='^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$'
-                                // https://neomania.tistory.com/3
-                            />
+                            <input id="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="이메일" />
                         </div>
                         <div id="gender-container">
                             <div>성별</div>
@@ -59,7 +75,7 @@ function SignUp() {
                         <label htmlFor="address">주소</label>
                         <div>
                             <input id="address" value={zipCode} onChange={e => setZipCode(e.target.value)} placeholder="우편번호" minLength={5} maxLength={30} required />
-                            <a target="_blank" href="https://www.juso.go.kr/statis/infoMyArea.do">
+                            <a target="_blank" href="https://www.juso.go.kr/statis/infoMyArea.do" rel="noreferrer">
                                 <button type="button">
                                     <img src={search} alt="search" />
                                 </button>
