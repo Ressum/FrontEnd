@@ -1,0 +1,41 @@
+@import '/src/style/Color.scss';
+
+.aisurvey-4 {
+    .questions {
+        h1{
+            line-height: 135%;
+        }
+        div{
+            line-height: 135%;
+        }
+    }
+    
+    #ai-survey-book-amount {
+        height: 382px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        box-sizing: border-box;
+
+        > input { 
+            display: none;
+
+            &:checked + label {
+                border: 3px solid #000;
+            }
+        }
+        > label {
+            background-color: $light-brown-2;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 25px 40px;
+    
+            > div {
+                font-size: 25px;
+                font-family: 'Blinker';
+                font-weight: 600;
+            }
+        }
+    }
+}
