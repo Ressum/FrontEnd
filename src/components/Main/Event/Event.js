@@ -1,5 +1,5 @@
 import './Event.scss';
-// import event1 from 'images/Event/event1.png';
+import event1 from 'images/MyPage/joined-event-image.svg';
 import { Link } from 'react-router-dom';
 // import event2 from 'images/Event/event2.svg';
 // import event3 from 'images/Event/event3.svg';
@@ -13,7 +13,7 @@ function Event() {
             <ul id="events">
                 <li>
                     <Link to="/main/AttendanceCheck">
-                        {/* <img src={event1} alt="event1" /> */}
+                        <img src={event1} alt="event1" />
                         <h2>잊지마 출석체크</h2>
                         <div>2022.09.01 ~ 2022.09.30</div>
                     </Link>

@@ -4,7 +4,7 @@ import './SignIn.scss';
 import kakao from 'images/SignIn/kakao.svg';
 import { useEffect, useState } from 'react';
 import { collection, doc, updateDoc, onSnapshot } from "firebase/firestore";
-import { db } from "../../../firebase_config"
+import { db } from "../../../firebase_config";
 import { useNavigate } from 'react-router-dom';
 
 function SignIn(props) {
@@ -62,12 +62,12 @@ function SignIn(props) {
             <form onSubmit={onSubmit}>
                 <div id="input-form">
                     <div>
-                        <label htmlFor="email">이메일</label>
-                        <input id="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="이메일을 입력해주세요." />
+                        <label htmlFor="sign-in-email">이메일</label>
+                        <input id="sign-in-email" value={email} onChange={e => setEmail(e.target.value)} placeholder="이메일을 입력해주세요." />
                     </div>
                     <div>
-                        <label htmlFor="password">비밀번호</label>
-                        <input type="password" id="password" value={password} onChagne={e => setPassword(e.target.value)} placeholder="비밀번호를 입력해주세요." />
+                        <label htmlFor="sign-in-password">비밀번호</label>
+                        <input type="password" id="sign-in-password" value={password} onChange={e => setPassword(e.target.value)} placeholder="비밀번호를 입력해주세요." />
                     </div>
                 </div>
                 <Link to="/main/LostPassword">비밀번호를 잊어버리셨나요?</Link>

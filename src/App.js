@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createContext, useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,7 +11,21 @@ import Main from "./components/Main/Main";
 import View from 'components/View/View';
 import AISurvey from 'components/AISurvey/AISurvey';
 import Goods from 'components/Goods/Goods';
+
+const userInfo = {
+  id: 0,
+  pw: '',
+  isLogin: false,
+}
+
+export const UserContext = createContext(userInfo);
+
 function App() {
+  const [loginUser, setLoginUser] = useState(localStorage.getItem('user'));
+  const refreshFunction = (data) => {
+    setLoginUser(data);
+  };
+
   return (
       <Router>
         <Routes>
