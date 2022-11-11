@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useRef } from "react";
 
 import './MyPage.scss';
@@ -6,8 +6,11 @@ import myProfileImg from 'images/my-profile-img.svg';
 import bookReportImg from 'images/MyPage/book-report-image.svg';
 import readBookImg from 'images/MyPage/read-book-image.svg';
 import joinedEventImg from 'images/MyPage/joined-event-image.svg';
+import { UserContext } from 'App';
 
 function MyPage() {
+    const { loginUser } = useContext(UserContext);
+
     const bookReportsId = useRef([
         123123,
         234123,
@@ -34,7 +37,7 @@ function MyPage() {
             <div id="my-page-header">
                 <img src={myProfileImg} alt="profile" />
                 <div>
-                    <h2><span>Shamir</span>님</h2>
+                    <h2><span>{loginUser}</span>님</h2>
                     <div>오늘은 날씨가 좋네요!</div>
                 </div>
             </div>
