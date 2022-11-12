@@ -6,8 +6,7 @@ function MainPopUp({ setShowPopUp }) {
         <div id="main-pop-up-bg">
             <div id="main-pop-up">
                 <h2>타이틀 제목</h2>
-                <div id="main-pop-up-contents">ㅓㄴ마ㅣㅁ나ㅣ어닝ㄴ민ㅁㄴㅇ
-ㅁㄴ우ㅏㅣㄴ무인무이니위ㅣ</div>
+                <div id="main-pop-up-contents">래썸을 시작하기 위해선 설문조사를 받으셔야 해요!</div>
                 <div id="main-pop-up-buttons">
                     <button id="close-button" onClick={() => setShowPopUp(false)}>닫기</button>
                     <button id="short-cut-button">바로가기</button>
