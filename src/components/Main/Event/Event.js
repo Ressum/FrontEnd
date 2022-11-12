@@ -1,5 +1,5 @@
 import './Event.scss';
-import event1 from 'images/MyPage/joined-event-image.svg';
+import event1 from 'images/Event/event1.png';
 import { Link } from 'react-router-dom';
 // import event2 from 'images/Event/event2.svg';
 // import event3 from 'images/Event/event3.svg';
