@@ -23,9 +23,9 @@ export const UserContext = createContext(userInfo);
 
 function App() {
   const [loginUser, setLoginUser] = useState(localStorage.getItem('user'));
-  // const refreshFunction = (data) => {
-  //   setLoginUser(data);
-  // };
+   const refreshFunction = (data) => {
+     setLoginUser(data);
+   };
 
   return (
     <Router>
