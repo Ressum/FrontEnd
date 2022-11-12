@@ -5,12 +5,7 @@ import { Link } from 'react-router-dom';
 
 function NoticeList() {
     const noticeId = useRef([
-        123,
-        124,
-        125,
-        126,
-        127,
-        128
+        123
     ]);
     return (
         <div id="notice-list">
