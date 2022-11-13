@@ -28,8 +28,8 @@ function AISurvey7() {
                     <label htmlFor="book-count-option-4">
                         <div>학교 성적, 공부에 대한 고민이 커요</div>
                     </label>
-                    <input id="book-count-option-4" type="radio" name="book-count" />
-                    <label htmlFor="book-count-option-4">
+                    <input id="book-count-option-5" type="radio" name="book-count" />
+                    <label htmlFor="book-count-option-5">
                         <div>아무 고민 없어요!</div>
                     </label>
                 </div>
