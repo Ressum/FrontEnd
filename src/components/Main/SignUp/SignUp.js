@@ -22,7 +22,6 @@ function SignUp() {
         month: '',
         day: ''
     });
-
     const onSubmit = e => {
         e.preventDefault();
         if (rePassword !== password) {
@@ -62,8 +61,7 @@ function SignUp() {
                     <div id="email-gender-container">
                         <div id="email-container">
                             <label htmlFor="email">이메일</label>
-                            <input id="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="이메일"
-                            />
+                            <input id="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="이메일" />
                         </div>
                         <div id="gender-container">
                             <div>성별</div>
