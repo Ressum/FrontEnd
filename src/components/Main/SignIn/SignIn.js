@@ -10,13 +10,6 @@ import { useNavigate } from 'react-router-dom';
 function SignIn(props) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [userData, setUserData] = useState();
-
-    useEffect(() => {
-        onSnapshot(collection(db, "User"), (snapshot) => {
-            setUserData(snapshot._snapshot.docChanges)
-        });
-    }, []);
 
     const onSubmit = e => {
         e.preventDefault();

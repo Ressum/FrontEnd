@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './Home.scss';
 import cover_21941 from 'images/Home/cover_21941.svg';
 import cover_21942 from 'images/Home/cover_21942.svg';
@@ -6,10 +6,8 @@ import cover_21943 from 'images/Home/cover_21943.svg';
 import cover_21944 from 'images/Home/cover_21944.svg';
 import profile from 'images/Home/profile.svg';
 import { useRef } from 'react';
-import { UserContext } from 'App';
 
 function Home() {
-    const { loginUser } = useContext(UserContext);
 
     const contentsImagesSrc = useRef([
         cover_21941,
@@ -28,7 +26,7 @@ function Home() {
                             <div className="content-header">
                                 <img src={profile} alt="profile" />
                                 <div>
-                                    <h3><span>{loginUser}</span>님이 읽었어요</h3>
+                                    <h3><span>{"사밀"}</span>님이 읽었어요</h3>
                                     <div><span>n</span>분 전</div>
                                 </div>
                             </div>
