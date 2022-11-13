@@ -5,7 +5,8 @@ import female from 'images/SignUp/female.svg';
 import search from 'images/search.svg';
 import { useState } from 'react';
 import { collection, doc, setDoc } from "firebase/firestore";
-import { db } from "../../../firebase_config"
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { db, auth } from "../../../firebase_config"
 import { useNavigate } from 'react-router-dom';
 
 function SignUp() {
@@ -28,10 +29,23 @@ function SignUp() {
             alert("비밀번호가 일치하지 않습니다.");
         } else {
             const newUserRef = doc(collection(db, "User"));
+            createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+                console.log(user);
+                // ...
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode);
+                console.log(errorMessage);
+                // ..
+            });
             // later...
             setDoc(newUserRef, {
                 email: email,
-                password: password,
                 gender: gender,
                 address: detailAddress,
                 zipCode: zipCode,
