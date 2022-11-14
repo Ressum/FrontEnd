@@ -5,11 +5,10 @@ import female from 'images/SignUp/female.svg';
 import search from 'images/search.svg';
 import { useState } from 'react';
 import { collection, doc, setDoc } from "firebase/firestore";
-import { db } from "../../../firebase_config"
-import { useNavigate } from 'react-router-dom';
+import { db } from "../../../firebase_config";
+import SignUpPopUp from './SignUpPopUp/SignUpPopUp';
 
 function SignUp() {
-    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [gender, setGender] = useState('');
     const [password, setPassword] = useState('');
@@ -21,6 +20,8 @@ function SignUp() {
         month: '',
         day: ''
     });
+    const [showSignUpPopUp, setShowSignUpPopUp] = useState(false);
+
     const onSubmit = e => {
         e.preventDefault();
         if (rePassword !== password) {
@@ -36,13 +37,16 @@ function SignUp() {
                 zipCode: zipCode,
                 birth: birth
             });
-            alert('회원가입이 완료되었습니다!')
-            navigate('/')
+            // alert('회원가입이 완료되었습니다!')
+            setShowSignUpPopUp(true);
             localStorage.setItem('isSurveyTested', false);
         }
     }
     return(
         <div id="sign-up">
+            {
+                showSignUpPopUp ? <SignUpPopUp setShowSignUpPopUp={setShowSignUpPopUp} /> : null
+            }
             <form onSubmit={onSubmit}>
                 <div id="input-form">
                     <div id="email-gender-container">
