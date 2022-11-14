@@ -38,6 +38,7 @@ function SignUp() {
             });
             alert('회원가입이 완료되었습니다!')
             navigate('/')
+            localStorage.setItem('isSurveyTested', false);
         }
     }
     return(

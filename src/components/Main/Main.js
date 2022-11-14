@@ -25,7 +25,6 @@ import MainPopUp from './MainPopUp/MainPopUp';
 import { UserContext } from 'App';
 
 function Main() {
-    //const [showPopUp, setShowPopUp] = useState(true);
     const { loginUser, setLoginUser } = useContext(UserContext);
     const refreshFunction = (data) => {
         setLoginUser(data);
@@ -35,9 +34,9 @@ function Main() {
         <div id="main">
             <Header />
             <NoticeShopButton />
-            {/*
-                showPopUp ? <MainPopUp setShowPopUp={setShowPopUp} /> : null
-            */}
+            {
+                localStorage.getItem('isSurveyTested') === 'false' ? <MainPopUp /> : null
+            }
             <Routes>
                 <Route path="home" element={<Home />} />
                 <Route path="attendancecheck" element={<AttendanceCheck />} />
