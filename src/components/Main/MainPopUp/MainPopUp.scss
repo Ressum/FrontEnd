@@ -59,16 +59,8 @@
                 border: 1px solid $gray-2;
                 width: 140px;
                 height: 40px;
-
-                &:first-child {
-                    color: $gray-1;
-                    background-color: white;
-                }
-
-                &:last-child {
-                    color: white;
-                    background-color: $light-orage;
-                }
+                color: white;
+                background-color: $light-orage;
             }
         }
 
