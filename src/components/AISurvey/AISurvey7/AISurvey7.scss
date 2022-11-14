@@ -11,14 +11,13 @@
     }
     
     #ai-survey-book-count {
-        height: 382px;
         width: 500px;
         display: flex;
         flex-direction: column;
         row-gap: 8px;
         box-sizing: border-box;
 
-        > input { 
+        > input {
             display: none;
 
             &:checked + label {
