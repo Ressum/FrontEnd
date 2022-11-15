@@ -18,7 +18,7 @@ import SignUp from './SignUp/SignUp';
 import Write from './Write/Write';
 import NoticeShopButton from './NoticeShopButton/NoticeShopButton';
 import LostPassword from './LostPassword/LostPassword';
-import AISurveyResult from './AISurveyResult/AISurveyResult';
+import Reservation from './Reservation/Reservation';
 import './Main.scss';
 import BottomBar from 'components/Main/BottomBar/BottomBar';
 import MainPopUp from './MainPopUp/MainPopUp';
@@ -52,7 +52,7 @@ function Main() {
                 }
                 <Route path="write" element={<Write />} />
                 <Route path="lostpassword" element={<LostPassword />} />
-                <Route path="aisurveyresult" element={<AISurveyResult />} />
+                <Route path="Reservation" element={<Reservation />} />
                 <Route path="/" element={<Navigate to="home" />} />
             </Routes>
             <BottomBar></BottomBar>

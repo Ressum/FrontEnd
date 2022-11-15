@@ -30,7 +30,7 @@ function AISurvey10() {
                     </label>
                 </div>
             </div>
-            <Link to="/main/aisurveyresult">
+            <Link to="/main/Reservation">
                 <button>
                     확인하기
                 </button>
