@@ -1,18 +1,17 @@
 import { useNavigate } from 'react-router-dom';
-import './SignUpPopUp.scss';
+import './ReservationPopUp.scss';
 
-function SignUpPopUp({setShowSignUpPopUp}) {
+function ReservationPopUp({setShowReservationPopUp}) {
     const navigate = useNavigate();
 
     return (
         <div id="sign-up-pop-up--bg">
             <div id="sign-up-pop-up--container">
-                <h1>회원가입이<br></br> 
-                    완료되었습니다!</h1>
+                <h1>회원가입이 완료되었습니다!</h1>
                 <button
                     id="sign-up-pop-up--check"
                     onClick={() => {
-                        setShowSignUpPopUp(false)
+                        setShowReservationPopUp(false)
                         navigate('/')
                     }}
                 >확인</button>
@@ -21,4 +20,4 @@ function SignUpPopUp({setShowSignUpPopUp}) {
     )
 }
 
-export default SignUpPopUp;
+export default ReservationPopUp;
