@@ -15,6 +15,7 @@
         > div {
             display: grid;
             grid-template-columns: 480px auto;
+            column-gap: 120px;
 
             > div:first-child {
                 display: flex;
