@@ -7,7 +7,8 @@ function SignUpPopUp({setShowSignUpPopUp}) {
     return (
         <div id="sign-up-pop-up--bg">
             <div id="sign-up-pop-up--container">
-                <h1>회원가입 완료됨</h1>
+                <h1>회원가입이<br></br> 
+                    완료되었습니다!</h1>
                 <button
                     id="sign-up-pop-up--check"
                     onClick={() => {
