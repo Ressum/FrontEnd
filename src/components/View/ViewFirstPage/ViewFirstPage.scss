@@ -8,8 +8,9 @@
         position: absolute;
         top: 32px;
         right: 36px;
-        width: 80px;
-        height: 30px;
+        width: 22vw;
+        max-width: 120px;
+        height: 4.5vh;
         border-radius: 30px;
         background-color: $light-orage;
         color: $dark-brown-1;
@@ -17,7 +18,7 @@
         font-size: 18px;
         font-family: 'BM Jua';
         text-decoration: none;
-        line-height: 30px;
+        line-height: 4.5vh;
     }
     > div {
         display: flex;
@@ -30,6 +31,15 @@
             font-size: 80px;
             color: $brown;
             margin-bottom: 13px;
+            @media (min-width:900px) {
+                font-size: 100px;
+            }
+        }
+        >img{
+            @media (min-width:900px) {
+                width: 40vw;
+                max-width: 400px;
+            }
         }
         > div {
             font-family: 'BM Dohyeon';
@@ -37,6 +47,9 @@
             color: $brown;
             margin-top: 48px;
             margin-bottom: 50px;
+            @media (min-width:900px) {
+                font-size: 30px;
+            }
         }
     }
 }
