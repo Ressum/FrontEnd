@@ -10,7 +10,6 @@ function AISurvey1() {
                     <div>
                         래썸 AI가 사밀이님의
                         편한 독서를 도와드려요!
-                        간단한 설문조사 어떠세요?
                     </div>
                 </div>
                 <div id="ai-survey-user-info">
