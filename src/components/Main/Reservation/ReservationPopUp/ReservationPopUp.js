@@ -7,7 +7,7 @@ function ReservationPopUp({setShowReservationPopUp}) {
     return (
         <div id="sign-up-pop-up--bg">
             <div id="sign-up-pop-up--container">
-                <h1>회원가입이 완료되었습니다!</h1>
+                <h1>사전예약이 완료되었습니다!</h1>
                 <button
                     id="sign-up-pop-up--check"
                     onClick={() => {
