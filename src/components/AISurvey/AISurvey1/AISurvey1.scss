@@ -1,9 +1,12 @@
 @import '/src/style/Color.scss';
 form{
     display: flex;
-    flex-direction: column;
-    justify-items: center;
     .aisurvey-1 {
+        @media (max-width:800px) {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;    
+        }
         .questions {
             h1 {
                 line-height: 135%;
