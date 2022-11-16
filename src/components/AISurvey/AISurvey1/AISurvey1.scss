@@ -1,79 +1,83 @@
 @import '/src/style/Color.scss';
-
-.aisurvey-1 {
-    .questions {
-        h1 {
-            line-height: 135%;
+form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    .aisurvey-1 {
+        .questions {
+            h1 {
+                line-height: 135%;
+            }
+    
+            div {
+                line-height: 135%;
+            }
         }
-
-        div {
-            line-height: 135%;
-        }
-    }
-
-    #ai-survey-user-info {
-        width: 620px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        row-gap: 24px;
-
-        > div {
+    
+        #ai-survey-user-info {
+            width: 620px;
             display: flex;
             flex-direction: column;
-            row-gap: 10px;
-
-            > h2 {
-                font-size: 20px;
-                font-family: 'Blinker';
-                font-weight: 600;
-            }
-
+            justify-content: center;
+            row-gap: 24px;
+    
             > div {
-                height: 48px;
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
-                font-size: 20px;
-                font-family: 'Blinker';
-
-                >input[type=radio] {
-                    display: none;
-                    
-                    &:nth-child(1):checked+label {
-                        border: 3px solid #000;
-                    }
+                flex-direction: column;
+                row-gap: 10px;
     
-                    &:nth-child(3):checked+label {
-                        border: 3px solid #000;
-                    }
+                > h2 {
+                    font-size: 20px;
+                    font-family: 'Blinker';
+                    font-weight: 600;
                 }
-
-                >label {
-                    height: 48px;
-                    width: 280px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border: 1px solid $gray-1;
-                    border-radius: 5px;
-                    box-sizing: border-box;
-                }
-
-            }
-            &#ai-survey-user-info__2 {
+    
                 > div {
-                    justify-content: flex-start;
-                    height: 38px;
+                    height: 48px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 20px;
+                    font-family: 'Blinker';
     
-                    >input {
-                        height: 38px;
-                        width: 120px;
+                    >input[type=radio] {
+                        display: none;
+                        
+                        &:nth-child(1):checked+label {
+                            border: 3px solid #000;
+                        }
+        
+                        &:nth-child(3):checked+label {
+                            border: 3px solid #000;
+                        }
+                    }
+    
+                    >label {
+                        height: 48px;
+                        width: 280px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         border: 1px solid $gray-1;
                         border-radius: 5px;
-                        margin-right: 10px;
-                        padding: 0 10px;
                         box-sizing: border-box;
+                    }
+    
+                }
+                &#ai-survey-user-info__2 {
+                    > div {
+                        justify-content: flex-start;
+                        height: 38px;
+        
+                        >input {
+                            height: 38px;
+                            width: 120px;
+                            border: 1px solid $gray-1;
+                            border-radius: 5px;
+                            margin-right: 10px;
+                            padding: 0 10px;
+                            box-sizing: border-box;
+                        }
                     }
                 }
             }
