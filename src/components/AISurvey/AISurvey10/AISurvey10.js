@@ -6,7 +6,7 @@ function AISurvey10() {
         <form>
             <div className='aisurvey-10'>
                 <div className='questions'>
-                    <h1>사밀님은 어떤 반장을 뽑고 싶으신가요?사밀님은 어떤 반장을 뽑고 싶으신가요?</h1>
+                    <h1>사밀님은 어떤 반장을 뽑고 싶으신가요?</h1>
                     <div>
                         우리 반을 이끌 친구는 누구가 되었으면 하나요?
                     </div>
