@@ -13,11 +13,10 @@ import Home from './Home/Home';
 import MyPage from './MyPage/MyPage';
 import Notice from './Notice/Notice';
 import Payment from './Payment/Payment';
-import SignIn from './SignIn/SignIn';
-import SignUp from './SignUp/SignUp';
+
 import Write from './Write/Write';
 import NoticeShopButton from './NoticeShopButton/NoticeShopButton';
-import LostPassword from './LostPassword/LostPassword';
+
 import Reservation from './Reservation/Reservation';
 import './Main.scss';
 import BottomBar from 'components/Main/BottomBar/BottomBar';
@@ -25,10 +24,6 @@ import MainPopUp from './MainPopUp/MainPopUp';
 import { UserContext } from 'App';
 
 function Main() {
-    const { loginUser, setLoginUser } = useContext(UserContext);
-    const refreshFunction = (data) => {
-        setLoginUser(data);
-    };
 
     return (
         <div id="main">
@@ -44,14 +39,9 @@ function Main() {
                 <Route path="mypage" element={<MyPage />} />
                 <Route path="notice/*" element={<Notice />} />
                 <Route path="payment" element={<Payment />} />
-                {false ? null :
-                    <>
-                        <Route path="signin" element={<SignIn refreshFunction={refreshFunction} user={loginUser} />} />
-                        <Route path="signup" element={<SignUp />} />
-                    </>
-                }
+
                 <Route path="write" element={<Write />} />
-                <Route path="lostpassword" element={<LostPassword />} />
+
                 <Route path="Reservation" element={<Reservation />} />
                 <Route path="/" element={<Navigate to="home" />} />
             </Routes>

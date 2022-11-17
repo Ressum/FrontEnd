@@ -11,7 +11,7 @@ import Main from "./components/Main/Main";
 import View from 'components/View/View';
 import AISurvey from 'components/AISurvey/AISurvey';
 import Goods from 'components/Goods/Goods';
-import SignIn from 'components/Main/SignIn/SignIn';
+import Sign from 'components/sign/sign';
 
 const userInfo = {
   id: 0,
@@ -35,6 +35,7 @@ function App() {
           <Route path="aisurvey/*" element={<AISurvey />} />
           <Route path="goods/*" element={<Goods />} />
           <Route path="main/*" element={<Main />} />
+          <Route path="sign/*" element={<Sign />} />
           <Route path='/' element={<Navigate to="main" />} />
           {/* {false ? null :
             <>
