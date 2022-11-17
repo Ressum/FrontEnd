@@ -8,7 +8,7 @@ function AISurvey1() {
                 <div className='questions'>
                     <h1>안녕하세요, 사밀이님!</h1>
                     <div>
-                        래썸 AI가 사밀이님의
+                        래썸 AI가 사밀이님의<br></br>
                         편한 독서를 도와드려요!
                     </div>
                 </div>
