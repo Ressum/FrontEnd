@@ -22,9 +22,12 @@
                 border: 3px solid #000;
             }
         }
-        > label {
+        > label.subject-options {
             font-family: 'Blinker';
             width: 128px;
+            @media (max-width: 500px) {
+                width: 90px;
+            }
             border-radius: 10px;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
             box-sizing: border-box;

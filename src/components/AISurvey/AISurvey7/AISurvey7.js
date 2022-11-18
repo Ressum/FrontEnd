@@ -11,7 +11,7 @@ function AISurvey7() {
                         누구나 가질 수 있는 고민, 사밀님은 어떤 고민을 가지고 계신가요?
                     </div>
                 </div>
-                <div id="ai-survey-book-count">
+                <div id="ai-survey-book-count" className="option-select">
                     <input id="book-count-option-1" type="radio" required name="book-count" />
                     <label htmlFor="book-count-option-1">
                         <div>제 얼굴과 모습이 신경쓰여요!</div>

@@ -11,7 +11,7 @@ function AISurvey6() {
                         아무래도 좋아요! 조금이라도 마음이 가는 걸 선택해보아요 !
                     </div>
                 </div>
-                <div id="ai-survey-book-count">
+                <div id="ai-survey-book-count" className="option-select">
                     <input id="book-count-option-1" type="radio" required name="book-count" />
                     <label htmlFor="book-count-option-1">
                         <div>애초에 책 읽는게 별로 내키진 않아요!</div>
