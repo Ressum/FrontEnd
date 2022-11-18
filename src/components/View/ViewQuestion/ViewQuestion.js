@@ -13,14 +13,7 @@ function ViewQuestion() {
                         <img src={plus} alt="plus" />
                     </label>
                     <div>
-                        래썸이란 ㅁ누ㅠ펀유ㅓㅏㅍ아ㅓㅍ윰퓨만맟무너ㅏㅍㅇ뮾
-                        ㅁㄴ치ㅜ뭎아ㅜ차ㅓ무차ㅓ무차ㅓㅁ누ㅏㅊㅁ눛ㅁㄴ추ㅏㅁㄴㅊㅁ
-                        ㄴ춤나ㅓ추마너추ㅏㅁ우차ㅓㅁ우차ㅓㅁ우참우차ㅓㅁㅇ추ㅏㅓㅁ
-                        ㅊㅁ처ㅏㅁ우차ㅓ무파우파ㅓㅇ무ㅏㅓㅁ우창ㅁㅊㅁ
-                        ㅊㅁ춰ㅏㅁ우차ㅓㅁ웇파ㅓㅁ우참웇ㅁ엋ㅇ무ㅏㅊㅁ우ㅏㅊㅁㅇ
-                        ㅁ워ㅏ춤아춤아춤아춤아ㅜㅊㅁ아ㅜㅊ마추ㅏㅁ니ㅏ무ㅏㅣㄴㅁㅊ
-                        ㅁ누ㅏㅊ푸마ㅣ추미ㅏ췸취ㅏㅁㄴ추ㅏㅣㄴㅁ춤니ㅜ차뉜미추님ㅁ
-                        ㅁ나ㅣ푸밍나ㅜ피ㅏㅁㄴ퓌ㅏ무피ㅏㅁ뉘ㅏㅁ니ㅏ미ㅏㄴ
+                        래썸은 자녀 맞춤형 독서 교육 서비스입니다.
                     </div>
                 </li>
                 <li>
@@ -30,7 +23,7 @@ function ViewQuestion() {
                         <img src={plus} alt="plus" />
                     </label>
                     <div>
-
+                    독서는 모든 학습의 기초가 됩니다. 수능 만점자의 90%가 어릴적부터 독서를 해왔다는 사실, 아셨나요? 하지만, 어른도 어려운 독서입니다. 자녀 맞춤형 독서 교육 서비스 래썸과 함께 독서 습관을 만들어봐요.
                     </div>
                 </li>
                 <li>
@@ -40,7 +33,7 @@ function ViewQuestion() {
                         <img src={plus} alt="plus" />
                     </label>
                     <div>
-
+                    교육의 뜻은 자녀에게 있어야합니다. 래썸은 자녀 맞춤형 서비스로 자녀가 주체가 되는 교육을 추구합니다.
                     </div>
                 </li>
                 <li>
@@ -50,17 +43,7 @@ function ViewQuestion() {
                         <img src={plus} alt="plus" />
                     </label>
                     <div>
-
-                    </div>
-                </li>
-                <li>
-                    <input type="checkbox" id="view-question-5" />
-                    <label htmlFor='view-question-5'>
-                        <h2>구독을 해지하려면 어떻게 해야 할까요?</h2>
-                        <img src={plus} alt="plus" />
-                    </label>
-                    <div>
-
+                    래썸 서비스는 맞춤형 책과 함께 고객에게 날아갑니다! 래썸 서비스는 월 2만원으로 이용가능합니다.
                     </div>
                 </li>
             </ul>

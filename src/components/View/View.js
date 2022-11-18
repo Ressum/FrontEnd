@@ -9,9 +9,9 @@ function view() {
     return(
         <div id="view">
             <ViewFirstPage />
-            {/*<ViewContents />
+            <ViewContents />
             <ViewProcess />
-            <ViewGoods />*/}
+            <ViewGoods />
             <ViewQuestion />
         </div>
     );

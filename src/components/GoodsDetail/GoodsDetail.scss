@@ -2,6 +2,7 @@
 
 #goods-detail {
     display: flex;
+    flex-direction: row;
     column-gap: 70px;
     margin: 0 auto;
     width: min-content;
@@ -38,7 +39,7 @@
             }
         }
 
-        >button {
+        #goods-detail-info--purchase {
             width: 90%;
             height: 65px;
             border: none;
