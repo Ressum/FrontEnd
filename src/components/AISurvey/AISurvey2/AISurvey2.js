@@ -11,7 +11,7 @@ function AISurvey2() {
                         집중해서 모두 읽은 책을 생각해봐요
                     </div>
                 </div>
-                <div id="ai-survey-book-count">
+                <div id="ai-survey-book-count" className="option-select" >
                     <input id="book-count-option-1" type="radio" required name="book-count" />
                     <label htmlFor="book-count-option-1">
                         <div>한달에 책 1권 읽을까 말까 해요</div>

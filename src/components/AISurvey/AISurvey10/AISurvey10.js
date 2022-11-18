@@ -11,7 +11,7 @@ function AISurvey10() {
                         우리 반을 이끌 친구는 누구가 되었으면 하나요?
                     </div>
                 </div>
-                <div id="ai-survey-book-count">
+                <div id="ai-survey-book-count" className="option-select">
                     <input id="book-count-option-1" type="radio" required name="book-count" />
                     <label htmlFor="book-count-option-1">
                         <div>엉뚱하지만 웃긴 반장!</div>

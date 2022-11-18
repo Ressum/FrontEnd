@@ -15,11 +15,13 @@ form{
         }
     
         #ai-survey-user-info {
-            width: 620px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             row-gap: 24px;
+            @media (max-width: 500px) {
+                width: 80%;
+            }
     
             > div {
                 display: flex;
@@ -33,7 +35,6 @@ form{
                 }
     
                 > div {
-                    height: 48px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -66,6 +67,13 @@ form{
                         box-sizing: border-box;
                     }
     
+                }
+                &#ai-survey-user-info__1 {
+                    > div {
+                        column-gap: 40px;
+                        row-gap: 10px;
+                        flex-wrap: wrap;
+                    }
                 }
                 &#ai-survey-user-info__2 {
                     > div {

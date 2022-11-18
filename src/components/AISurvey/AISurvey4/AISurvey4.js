@@ -11,7 +11,7 @@ function AISurvey4() {
                         주로 읽는 두께거나 가장 집중이 잘되는 두께로 골라봐요!
                     </div>
                 </div>
-                <div id="ai-survey-book-amount">
+                <div id="ai-survey-book-amount" className="option-select">
                     <input id="book-amount-option-1" type="radio" required name="book-amount" />
                     <label htmlFor="book-amount-option-1">
                         <div>금방 읽을 수 있는 얇은 책이요! </div>

@@ -16,6 +16,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media (max-width: 500px) {
+            width: 80%;
+        }
         ::placeholder {
             color: $dark-gray;
         }
@@ -23,6 +26,9 @@
             font-family: 'Blinker';
             font-weight: 400;
             font-size: 22px;
+            @media (max-width: 500px) {
+                font-size: 14px;
+            }
         }
         #ai-division-line {
             height: 3px;
@@ -35,6 +41,9 @@
             font-family: 'Blinker';
             font-weight: 400;
             font-size: 16px;
+            @media (max-width: 500px) {
+                font-size: 12px;
+            }
         }
     }
 }

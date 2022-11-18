@@ -11,7 +11,7 @@ function AISurvey8() {
                         저흰 언젠간 어른이 될꺼에요! 어른이 된 사밀님의 모습을 생각해볼까요?
                     </div>
                 </div>
-                <div id="ai-survey-book-count">
+                <div id="ai-survey-book-count" className="option-select">
                     <input id="book-count-option-1" type="radio" required name="book-count" />
                     <label htmlFor="book-count-option-1">
                         <div>친구들과 신나게 놀고 있을 것 같아요!</div>
