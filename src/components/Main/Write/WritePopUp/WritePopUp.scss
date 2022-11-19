@@ -25,6 +25,10 @@
             flex-direction: column;
 
             #search {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+
                 > div {
                     font-family: 'BM Dohyeon';
                     color: $dark-gray;
@@ -32,12 +36,14 @@
                     padding: 15px;
                     background-color: #fff;
                     border: 1px solid $light-gray-1;
+                    display: flex;
+                    align-items: center;
 
-                    &:last-child {
-                        margin-top: 8px;
-                    }
                     > input {
-                        margin-left: 10px;
+                        font-family: 'BM Dohyeon';
+                        color: $dark-gray;
+                        font-size: 10px;
+                        flex: 1;
                     }
                 }
             }
