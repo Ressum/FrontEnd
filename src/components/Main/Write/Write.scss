@@ -21,14 +21,17 @@
     }
 
     #write-contents {
-        display: flex;
         width: 100%;
         margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-end;
+        row-gap: 50px;
+        column-gap: 50px;
 
         #select-book {
-            margin-left: 64px;
+            height: 100%;
 
             h2 {
                 font-size: 23px;
@@ -67,15 +70,20 @@
 
         #write-book {
             display: flex;
-            align-items: center;
             justify-content: center;
-
+            min-width: 460px;
+            @media (max-width: 800px) {
+                min-width: 340px;
+            }
+            width: 50%;
+            max-width: 840px;
+            
             #write-book-wrap {
-                width: 800px;
                 display: flex;
                 flex-direction: column;
                 border: 1px solid $light-gray-1;
                 box-sizing: border-box;
+                width: 100%;
 
                 >h2 {
                     height: 45px;
@@ -91,27 +99,25 @@
                 #write-book-form {
                     display: flex;
                     flex-direction: column;
-                    height: 310px;
+                    row-gap: 5px;
+                    margin: 10px;
 
                     >h4 {
-                        margin-top: 6px;
-                        margin-left: 11px;
                         color: $gray-1;
                         font-size: 14px;
                     }
 
                     .write-book-line {
                         height: 0.5px;
-                        width: 780px;
+                        width: 100%;
                         margin: 0 auto;
                         background-color: $light-gray-1;
-                        margin-top: 3px;
-                        margin-bottom: 10px;
+                        margin: 3px auto 10px;
                     }
 
                     input[type=text] {
                         margin: 0 auto;
-                        width: 750px;
+                        width: 95%;
                         height: 30px;
                         outline: none;
                         border: none;
@@ -126,8 +132,7 @@
 
                     textarea {
                         margin: 0 auto;
-                        margin-bottom: 10px;
-                        width: 750px;
+                        width: 95%;
                         height: 195px;
                         outline: none;
                         border: none;
@@ -161,17 +166,19 @@
                 }
 
                 #write-book-footer {
-                    border-top: 1px solid $light-gray-1;
-                    display: flex;
+                    display: grid;
+                    grid-template-columns: 1fr 80px;
                     align-items: center;
                     justify-content: space-between;
                     box-sizing: border-box;
-
+                    border-top: 1px solid $light-gray-1;
+                    height: 45px;
+                    
                     #write-book-options {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        width: 755px;
+                        width: 100%;
 
                         #write-left-options {
                             margin-left: 14px;
@@ -213,9 +220,8 @@
                     }
 
                     > button#write-book-upload {
-                        width: 85px;
                         background: $light-orage;
-                        height: 45px;
+                        height: 100%;
                         border: none;
                     }
                 }
