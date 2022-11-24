@@ -1,9 +1,9 @@
 import GoodsData from './GoodsList.json';
 import './GoodsList.scss';
-import goods1 from 'images/Goods/goods1.svg';
-import goods2 from 'images/Goods/goods2.svg';
-import goods3 from 'images/Goods/goods3.svg';
-import goods4 from 'images/Goods/goods4.svg';
+import goods1 from 'images/Goods/goods1.png';
+import goods2 from 'images/Goods/goods2.png';
+import goods3 from 'images/Goods/goods3.png';
+import goods4 from 'images/Goods/goods4.png';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 

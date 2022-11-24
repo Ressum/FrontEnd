@@ -1,10 +1,7 @@
 import React, { useContext } from 'react';
 import './Home.scss';
-import cover_21941 from 'images/Home/cover_21941.svg';
-import cover_21942 from 'images/Home/cover_21942.svg';
-import cover_21943 from 'images/Home/cover_21943.svg';
-import cover_21944 from 'images/Home/cover_21944.svg';
-import profile from 'images/Home/profile.svg';
+import cover_21941 from 'images/Home/cover_21941.png';
+import profile from 'images/Home/profile.png';
 import { useRef } from 'react';
 import { UserContext } from 'App';
 
@@ -12,11 +9,7 @@ function Home() {
     const { loginUser } = useContext(UserContext);
 
     const contentsImagesSrc = useRef([
-        cover_21941,
-        cover_21942,
-        cover_21943,
-        cover_21944,
-        cover_21944
+        cover_21941
     ])
     
     return (

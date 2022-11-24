@@ -4,7 +4,7 @@ import homeIcon from 'images/Header/home.svg';
 import partyPopperIcon from 'images/Header/party-popper.svg';
 import calenderIcon from 'images/Header/calender.svg';
 import writeIcon from 'images/Header/write.svg';
-import profile from 'images/Home/profile.svg';
+import profile from 'images/Home/profile.png';
 import { Link } from 'react-router-dom';
 function Header() {
     return(
