@@ -6,8 +6,7 @@ function NotYet() {
     return (
         <div id="not-yet-pop-up-bg">
             <div id="not-yet-pop-up">
-                <h2>준비중인 페이지입니다.</h2>
-                <div id="not-yet-pop-up-contents">글쓰기 페이지는 아직 준비중입니다.</div>
+                <h2>준비중인<br/>페이지입니다.</h2>
                 <div id="not-yet-pop-up-buttons">
                     <button 
                         id="short-cut-button"
