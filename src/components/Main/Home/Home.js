@@ -1,20 +1,15 @@
+import React, { useContext } from 'react';
 import './Home.scss';
-import cover_21941 from 'images/Home/cover_21941.svg';
-import cover_21942 from 'images/Home/cover_21942.svg';
-import cover_21943 from 'images/Home/cover_21943.svg';
-import cover_21944 from 'images/Home/cover_21944.svg';
-import profile from 'images/Home/profile.svg';
+import cover_21941 from 'images/Home/cover_21941.png';
+import profile from 'images/Home/profile.png';
 import { useRef } from 'react';
+import { UserContext } from 'App';
 
 function Home() {
+    const { loginUser } = useContext(UserContext);
+
     const contentsImagesSrc = useRef([
-        cover_21941,
-        cover_21942,
-        cover_21943,
-        cover_21944,
-        cover_21944,
-        cover_21943,
-        cover_21943
+        cover_21941
     ])
     
     return (
@@ -26,7 +21,7 @@ function Home() {
                             <div className="content-header">
                                 <img src={profile} alt="profile" />
                                 <div>
-                                    <h3><span>사밀</span>님이 읽었어요</h3>
+                                    <h3><span>{loginUser}</span>님이 읽었어요</h3>
                                     <div><span>n</span>분 전</div>
                                 </div>
                             </div>
@@ -34,7 +29,7 @@ function Home() {
                                 <img src={imagesSrc} alt="content-img" />
                                 <div>
                                     <div className="paragraph-cover">
-                                        ㅇㄴ마ㅓ푸아너퓨ㅜ아ㅓㅠ파유파마ㅏㅁ뉴차ㅓㄴㅁ차ㅓㄴ무차ㅓㄴ무ㅏ처눔천머춘문머춘ㅁ추ㄴㅁㅇㅇㄴㅁㅇㄴㅇㄴㅇㄴ
+                                        독고씨의 이야기를 알게 되고나선 사실 인과응보다 싶었지만, 사람은 변하지 않는다는 진리 아닌 진리 같은 말을 깨주는 주인공이라서 나도 모르게 그의 변화를 응원했다.
                                     </div>
                                     <div className="division-line"></div>
                                     <div className="book-info">

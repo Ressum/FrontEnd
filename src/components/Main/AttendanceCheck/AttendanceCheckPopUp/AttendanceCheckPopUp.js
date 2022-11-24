@@ -1,3 +1,4 @@
+import React from 'react';
 import './AttendanceCheckPopUp.scss';
 
 function AttendanceCheckPopUp({ setShowPopUp }) {

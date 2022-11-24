@@ -12,13 +12,13 @@ function BottomBar() {
                 <img  className='home' src={homeIcon} alt="home" />
                 <p>홈</p>
             </Link>
-            <Link to='/main/event'>
-                <img src={partyPopperIcon} alt="event" />
-                <p>이벤트</p>
-            </Link>
             <Link to='/main/write'>
                 <img src={bookIcon} alt="write" />
                 <p>글쓰기</p>
+            </Link>
+            <Link to='/main/event'>
+                <img src={partyPopperIcon} alt="event" />
+                <p>이벤트</p>
             </Link>
             <Link to='/main/notice'>
                 <img src={calenderIcon} alt="notice" />

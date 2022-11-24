@@ -1,0 +1,100 @@
+{
+    "goodsList": [
+        {
+            "goodsId": 1,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 2,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 3,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 4,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 5,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 6,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 7,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 8,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 9,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 10,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 11,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 12,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 13,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 14,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 15,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        },
+        {
+            "goodsId": 16,
+            "thumbnailUrl": "https://image-url",
+            "goodsName": "상품 이름 상품 이름",
+            "goodsPrice": 5000
+        }
+    ]
+}

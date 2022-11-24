@@ -28,13 +28,23 @@
         row-gap: 56px;
 
         > li {
-            > img{
-                width: 100%;
-            }
-            > h2 {
-                margin-top: 16px;
-                font-size: 25px;
-                font-family: 'BM Dohyeon';
+            >a{
+                text-decoration: none;
+                > img{
+                    border-radius: 25px;
+                    width: 100%;
+                }
+                > h2 {
+                    margin-top: 16px;
+                    font-size: 25px;
+                    font-family: 'BM Dohyeon';
+                    text-decoration: none;
+                    color: $dark-brown-2;
+                }
+                > div{
+                    text-decoration: none;
+                    color: $dark-brown-2;
+                }
             }
         }
         padding-bottom: 70px;

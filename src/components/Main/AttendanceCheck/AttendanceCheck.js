@@ -1,3 +1,4 @@
+import React from 'react';
 import { useRef, useState } from 'react';
 import './AttendanceCheck.scss';
 import AttendanceCheckPopUp from './AttendanceCheckPopUp/AttendanceCheckPopUp';

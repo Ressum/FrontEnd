@@ -1,0 +1,62 @@
+@import '/src/style/Color.scss';
+
+#notice-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: $dark-brown-2;
+        font-size: 25px;
+        font-family: 'BM Dohyeon';
+        margin-top: 100px;
+    }
+    #notice-detail-horizontal-line {
+        height: 0.5px;
+        width: 100%;
+        background-color: $dark-gray;
+        margin-top: 28px;
+        margin-bottom: 36px;
+    }
+
+    #notice-detail-contents {
+        // $val: 1400/1536;
+        max-width: 1400px;
+        background-color: #fff;
+        border: 1px solid $gray-2;
+        box-sizing: border-box;
+        margin-bottom: 10%;
+
+        #notice-detail-header {
+            padding: 32px 35px 16px;
+
+            #notice-detail-title {
+                font-size: 36px;
+                font-family: 'BM Hanna Pro';
+            }
+            #notice-detail-info {
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+                font-size: 14px;
+                color: $gray-2;
+                font-family: 'BM Hanna Air';
+            }
+        }
+        #notice-detail-section {
+            padding: 20px 35px 40px;
+            display: flex;
+            border-top: 1px solid $light-gray-1;
+            column-gap: 24px;
+
+            #notice-detail-text {
+                font-size: 22px;
+                font-family: 'BM Hanna Air';
+            }
+        }
+        #notice-detail-footer {
+            border-top: 1px solid $light-gray-1;
+            height: 80px;
+        }
+    }
+}

@@ -1,3 +1,4 @@
+import React from 'react';
 import bell from 'images/bell.svg';
 import { Link } from 'react-router-dom';
 import './NoticeShopButton.scss';

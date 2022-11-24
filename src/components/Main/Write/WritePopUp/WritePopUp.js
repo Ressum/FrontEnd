@@ -1,8 +1,9 @@
+import React from 'react';
 import { useRef } from 'react';
 import './WritePopUp.scss';
 
 function WritePopUp({ setShowPopUp }) {
-    const jsonForm = useRef({
+    const json = useRef({
         bookInfos: [
             {
                 bookTitle: '페인트 (2018)',
@@ -33,17 +34,27 @@ function WritePopUp({ setShowPopUp }) {
                 bookRegistrant: '',
             },
         ]
-    })
+    });
+    const writePopUpBg = useRef(null);
+
     return (
-        <div id="write-pop-up-bg">
+        <div id="write-pop-up-bg"
+            ref={writePopUpBg}
+            onClick={e => {
+                if(e.target === writePopUpBg.current)
+                    setShowPopUp(false);
+            }}
+        >
             <div id="write-pop-up">
                 <div id="write-search-box">
                     <div id="search">
                         <div id="book-search">
-                            도서명<input />
+                            <div>도서명 :&nbsp;</div>
+                            <input size="1" />
                         </div>
                         <div id="publish-search">
-                            출판사<input />
+                            <div>출판사 :&nbsp;</div>
+                            <input size="1" />
                         </div>
                     </div>
                     <button>검색</button>
@@ -53,8 +64,8 @@ function WritePopUp({ setShowPopUp }) {
                     <div id="book-results-line"></div>
                     <ul id="book-results">
                         {
-                            jsonForm.current.bookInfos.map((bookInfo, index) => (
-                                <li className="book-result">
+                            json.current.bookInfos.map((bookInfo, index) => (
+                                <li className="book-result" key={index}>
                                     <div className="book-result-order">{index+1}</div>
                                     <div>
                                         <h2 className="book-title">{bookInfo.bookTitle}</h2>
