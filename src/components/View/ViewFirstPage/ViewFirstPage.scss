@@ -10,7 +10,7 @@
         right: 36px;
         width: 22vw;
         max-width: 120px;
-        height: 4.5vh;
+        height: 4vh;
         border-radius: 30px;
         background-color: $light-orage;
         color: $dark-brown-1;
@@ -36,9 +36,11 @@
             }
         }
         >img{
-            @media (min-width:900px) {
+            width: 18vw;
+            max-width: 400px;
+            @media (max-width:500px) {
                 width: 40vw;
-                max-width: 400px;
+                min-width: 200px;
             }
         }
         > div {

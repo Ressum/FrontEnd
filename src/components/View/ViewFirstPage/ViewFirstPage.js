@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import './ViewFirstPage.scss';
-import main from 'images/View/main.svg';
+import main from 'images/View/hello.png';
 
 function ViewFirstPage() {
     return (
