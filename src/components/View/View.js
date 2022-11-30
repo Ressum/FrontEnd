@@ -1,17 +1,17 @@
 import ViewContents from "./ViewContents/ViewContents";
 import ViewFirstPage from "./ViewFirstPage/ViewFirstPage";
-import ViewGoods from "./ViewGoods/ViewGoods";
-import ViewProcess from "./ViewProcess/ViewProcess";
-import ViewQuestion from "./ViewQuestion/ViewQuestion";
+// import ViewGoods from "./ViewGoods/ViewGoods";
+// import ViewProcess from "./ViewProcess/ViewProcess";
+ import ViewQuestion from "./ViewQuestion/ViewQuestion";
 import './View.scss';
 
 function view() {
     return(
         <div id="view">
             <ViewFirstPage />
-            <ViewContents />
+            {/* <ViewContents />
             <ViewProcess />
-            <ViewGoods />
+            <ViewGoods /> */}
             <ViewQuestion />
         </div>
     );
