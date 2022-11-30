@@ -4,14 +4,14 @@ import './NoticeList.scss';
 import { Link } from 'react-router-dom';
 
 function NoticeList() {
-    const noticeId = useRef([
-        123
-    ]);
+    // const noticeId = useRef([
+    //     123
+    // ]);
     return (
         <div id="notice-list">
             <h1>공지사항</h1>
             <div id="notice-list-horizontal-line"></div>
-            <ul>
+            {/* <ul>
                 {
                     noticeId.current.map((id, index) => (
                         <Link to={`id/${id}`} key={index}>
@@ -25,7 +25,8 @@ function NoticeList() {
                         </Link>
                     ))
                 }
-            </ul>
+            </ul> */}
+            <h1>공지가 없습니다.</h1>
         </div>
     );
 }

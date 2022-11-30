@@ -5,13 +5,18 @@
     flex-direction: column;
     align-items: center;
 
-    h1 {
+    h1:first-child {
         color: $dark-brown-2;
         font-size: 25px;
         font-family: 'BM Dohyeon';
         margin-top: 100px;
     }
-
+    h1:last-child {
+        color:$gray-1;
+        font-size: 20px;
+        font-family: 'BM Dohyeon';
+        margin-top: 10px;
+    }
     #notice-list-horizontal-line {
         height: 0.5px;
         width: 100%;
