@@ -1,34 +1,42 @@
 @import '/src/style/Color.scss';
 
 #sign-up-pop-up--bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-
-    #sign-up-pop-up--container {
-        border: 1px solid #000;
+    flex-direction: column;
+    >img{
+        width: 300px;
+        position: relative;
+        top:135px;
+    }
+    #sign-up-pop-up-container {
+        margin-bottom: 300px;
+        min-width: 320px;
+        min-height: 305px;
+        border-radius: 40px;
         background-color: white;
-        border-radius: 2rem;
+        font-family: 'Blinker';
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
-        padding: 2.5rem;
-
-        > h1 {
-            font-size: 1.5rem;
-            font-family: 'Blinker';
-            margin-bottom: 1.5rem;
+        justify-content: center;
+        >h2 {
+            margin-top: 65px;
+            font-size: 33px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.2;
         }
-
-        > button {
+        >button {
+            margin-top: 30px;
             cursor: pointer;
             font-size: 15px;
             border-radius: 40px;
@@ -37,6 +45,21 @@
             height: 40px;
             color: white;
             background-color: $light-orage;
+        }
+
+        #do-not-show {
+            color: $gray-2;
+            text-decoration: underline $gray-2;
+            margin-top: 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        #sign-up-line {
+            height: 2px;
+            width: 30px;
+            background-color: $orange;
+            margin-top: 28px;
         }
     }
 }
