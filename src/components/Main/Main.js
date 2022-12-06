@@ -33,7 +33,7 @@ function Main() {
                 localStorage.getItem('isSurveyTested') === 'false' ? <MainPopUp /> : null
             }
             <Routes>
-                <Route path="home" element={<Home />} />
+                <Route path="" element={<Home />} />
                 <Route path="attendancecheck" element={<AttendanceCheck />} />
                 <Route path="event" element={<Event />} />
                 <Route path="mypage" element={<MyPage />} />

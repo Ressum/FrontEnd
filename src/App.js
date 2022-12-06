@@ -36,7 +36,7 @@ function App() {
           <Route path="goods/*" element={<Goods />} />
           <Route path="main/*" element={<Main />} />
           <Route path="sign/*" element={<Sign />} />
-          <Route path='/' element={<Navigate to="main" />} />
+          <Route path='/' element={<Navigate to="View" />} />
           {/* {false ? null :
             <>
               <Route path="signin" element={<SignIn refreshFunction={refreshFunction} user={loginUser} />} />
