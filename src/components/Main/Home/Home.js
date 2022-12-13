@@ -9,6 +9,8 @@ function Home() {
     const { loginUser } = useContext(UserContext);
 
     const contentsImagesSrc = useRef([
+        cover_21941,
+        cover_21941,
         cover_21941
     ])
     
