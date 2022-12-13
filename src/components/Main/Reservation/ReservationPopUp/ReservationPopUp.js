@@ -14,7 +14,7 @@ function ReservationPopUp({setShowReservationPopUp}) {
                     id="sign-up-pop-up--check"
                     onClick={() => {
                         setShowReservationPopUp(false)
-                        navigate('/')
+                        navigate('/main/home')
                     }}
                 >확인</button>
                 <div id="sign-up-line"></div>

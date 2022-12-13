@@ -12,7 +12,7 @@ function NotYet() {
                     <button 
                         id="short-cut-button"
                         onClick={() => {
-                            navigate('/');
+                            navigate('/main/home');
                         }}
                     >홈으로 돌아가기</button>
                 <div id="not-yet-pop-up-line"></div>

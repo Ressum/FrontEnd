@@ -13,7 +13,7 @@ function SignUpPopUp({setShowSignUpPopUp}) {
                     id="sign-up-pop-up--check"
                     onClick={() => {
                         setShowSignUpPopUp(false)
-                        navigate('/')
+                        navigate('/main/home')
                     }}
                 >확인</button>
             </div>

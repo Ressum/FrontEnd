@@ -23,7 +23,7 @@ function SignIn(props) {
     const onSubmit = e => {
         e.preventDefault();
         alert('로그인에 성공했습니다!');
-        navigate('/');
+        navigate('/main/home');
     }
     return(
         <div id="sign-in">
