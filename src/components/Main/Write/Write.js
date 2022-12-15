@@ -60,13 +60,16 @@ function Write() {
                                     <div id="write-book-footer">
                                         <div id="write-book-options">
                                             <div id="write-left-options">
-                                                <div id="write-left-image-input">
-                                                    <label htmlFor='file'>
-                                                        <img src={photo} alt="img-icon" />사진
-                                                    </label>
-                                                    <input type="file" id="file" accept='image/*' onChange={saveFileImage} />
-                                                </div>
-                                                <button id="delete-image-file" onClick={deleteImageFile}>사진 삭제</button>
+                                                {
+                                                    fileImage ? <button id="delete-image-file" onClick={deleteImageFile}>사진 삭제</button>
+                                                    : 
+                                                    <div id="write-left-image-input">
+                                                        <label htmlFor='file'>
+                                                            <img src={photo} alt="img-icon" />사진
+                                                        </label>
+                                                        <input type="file" id="file" accept='image/*' onChange={saveFileImage} />
+                                                    </div>
+                                                }
                                             </div>
                                             <div id="write-right-options">
                                                 <input type="checkbox" id="public" />
