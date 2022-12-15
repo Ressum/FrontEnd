@@ -6,7 +6,7 @@ import { useState } from 'react';
 import WritePopUp from './WritePopUp/WritePopUp';
 import NotYet from './NotYet/NotYet';
 
-const isNotYet = true;
+const isNotYet = false;
 
 function Write() {
     const [fileImage, setFileImage] = useState('');
